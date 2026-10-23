@@ -1,0 +1,2 @@
+source /home/luan/Documents/Espressif/Esp32_Project/build/bootloader/gdbinit/symbols
+source /home/luan/Documents/Espressif/Esp32_Project/build/bootloader/gdbinit/connect

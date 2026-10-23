@@ -1,0 +1,5 @@
+{
+    "idf.currentSetup": "/home/luan/.espressif/v5.4.4/esp-idf",
+    "idf.flashType": "UART",
+    "idf.port": "/dev/ttyUSB0"
+}
