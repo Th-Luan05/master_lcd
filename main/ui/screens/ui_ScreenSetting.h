@@ -14,18 +14,18 @@ extern "C" {
 extern void ui_ScreenSetting_screen_init(void);
 extern void ui_ScreenSetting_screen_destroy(void);
 extern lv_obj_t * ui_ScreenSetting;
-extern lv_obj_t * ui_ImgButton3;
+extern void ui_event_ImgToHome(lv_event_t * e);
+extern lv_obj_t * ui_ImgToHome;
 extern lv_obj_t * ui_Image6;
 extern lv_obj_t * ui_Container1;
-extern lv_obj_t * ui_Label2;
+extern void ui_event_ButtonCn(lv_event_t * e);
 extern lv_obj_t * ui_ButtonCn;
 extern lv_obj_t * ui_Label3;
+extern void ui_event_ButtonCb(lv_event_t * e);
 extern lv_obj_t * ui_ButtonCb;
 extern lv_obj_t * ui_Label11;
 extern lv_obj_t * ui_ButtonDM;
 extern lv_obj_t * ui_Label13;
-extern lv_obj_t * ui_Label7;
-extern lv_obj_t * ui_Label9;
 // CUSTOM VARIABLES
 
 #ifdef __cplusplus

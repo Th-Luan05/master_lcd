@@ -14,18 +14,24 @@ extern "C" {
 extern void ui_ScreenCb_screen_init(void);
 extern void ui_ScreenCb_screen_destroy(void);
 extern lv_obj_t * ui_ScreenCb;
+extern void ui_event_ImageCbbackSt(lv_event_t * e);
 extern lv_obj_t * ui_ImageCbbackSt;
+extern void ui_event_SliderLed(lv_event_t * e);
 extern lv_obj_t * ui_SliderLed;
 extern lv_obj_t * ui_Label15;
 extern lv_obj_t * ui_Label16;
+extern void ui_event_SliderTem(lv_event_t * e);
 extern lv_obj_t * ui_SliderTem;
+extern void ui_event_SliderWaitingTime(lv_event_t * e);
 extern lv_obj_t * ui_SliderWaitingTime;
 extern lv_obj_t * ui_Label17;
 extern lv_obj_t * ui_Label18;
 extern lv_obj_t * ui_Label19;
 extern lv_obj_t * ui_Label20;
+extern void ui_event_ButtonRST2(lv_event_t * e);
 extern lv_obj_t * ui_ButtonRST2;
 extern lv_obj_t * ui_Label31;
+extern void ui_event_ButtonReset2(lv_event_t * e);
 extern lv_obj_t * ui_ButtonReset2;
 extern lv_obj_t * ui_Label32;
 // CUSTOM VARIABLES

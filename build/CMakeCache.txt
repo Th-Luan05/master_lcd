@@ -14,9 +14,6 @@
 # EXTERNAL cache entries
 ########################
 
-//No help, variable specified on the command line.
-CCACHE_ENABLE:UNINITIALIZED=0
-
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/xtensa-esp32-elf-addr2line
 
@@ -368,9 +365,6 @@ Mbed TLS_IS_TOP_LEVEL:STATIC=OFF
 Mbed TLS_SOURCE_DIR:STATIC=/home/luan/.espressif/v5.4.4/esp-idf/components/mbedtls/mbedtls
 
 //No help, variable specified on the command line.
-PYTHON:UNINITIALIZED=/home/luan/.espressif/python_env/idf5.4_py3.14_env/bin/python
-
-//No help, variable specified on the command line.
 PYTHON_DEPS_CHECKED:UNINITIALIZED=1
 
 //Allow unsafe builds. These builds ARE NOT SECURE.
@@ -608,7 +602,7 @@ C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS:INTERNAL=1
 //Details about finding Git
 FIND_PACKAGE_MESSAGE_DETAILS_Git:INTERNAL=[/usr/bin/git][v2.56.0()]
 //Details about finding Python3
-FIND_PACKAGE_MESSAGE_DETAILS_Python3:INTERNAL=[/home/luan/.espressif/python_env/idf5.4_py3.14_env/bin/python][found components: Interpreter ][v3.14.8()]
+FIND_PACKAGE_MESSAGE_DETAILS_Python3:INTERNAL=[/home/luan/.espressif/tools/python/v5.4.4/venv/bin/python][found components: Interpreter ][v3.14.8()]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 //ADVANCED property for variable: GIT_EXECUTABLE
@@ -619,10 +613,10 @@ _GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=/usr/local
 _Python3_Compiler_REASON_FAILURE:INTERNAL=
 //Development reason failure
 _Python3_Development_REASON_FAILURE:INTERNAL=
-_Python3_EXECUTABLE:INTERNAL=/home/luan/.espressif/python_env/idf5.4_py3.14_env/bin/python
+_Python3_EXECUTABLE:INTERNAL=/home/luan/.espressif/tools/python/v5.4.4/venv/bin/python
 //Python3 Properties
-_Python3_INTERPRETER_PROPERTIES:INTERNAL=Python;3;14;8;32;64;;;abi3;/usr/lib64/python3.14;/home/luan/.espressif/python_env/idf5.4_py3.14_env/lib64/python3.14;/home/luan/.espressif/python_env/idf5.4_py3.14_env/lib/python3.14/site-packages;/home/luan/.espressif/python_env/idf5.4_py3.14_env/lib64/python3.14/site-packages
-_Python3_INTERPRETER_SIGNATURE:INTERNAL=86fb5422414626ae9caa7da71b833687
+_Python3_INTERPRETER_PROPERTIES:INTERNAL=Python;3;14;8;32;64;;;abi3;/usr/lib64/python3.14;/home/luan/.espressif/tools/python/v5.4.4/venv/lib64/python3.14;/home/luan/.espressif/tools/python/v5.4.4/venv/lib/python3.14/site-packages;/home/luan/.espressif/tools/python/v5.4.4/venv/lib64/python3.14/site-packages
+_Python3_INTERPRETER_SIGNATURE:INTERNAL=8d2afd37627de07f4e466cc19cd41f96
 //NumPy reason failure
 _Python3_NumPy_REASON_FAILURE:INTERNAL=
 

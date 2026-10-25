@@ -1,5 +1,17 @@
 {
     "idf.currentSetup": "/home/luan/.espressif/v5.4.4/esp-idf",
     "idf.flashType": "UART",
-    "idf.port": "/dev/ttyUSB0"
+    "idf.port": "/dev/ttyUSB0",
+    "idf.openOcdConfigs": [
+        "board/esp32-wrover-kit-3.3v.cfg"
+    ],
+    "idf.customExtraVars": {
+        "IDF_TARGET": "esp32"
+    },
+    "clangd.path": "/home/luan/.espressif/tools/esp-clang/esp-18.1.2_20240912/esp-clang/bin/clangd",
+    "clangd.arguments": [
+      "--background-index",
+      "--query-driver=**",
+      "--compile-commands-dir=/home/luan/Documents/Espressif/Esp32_Project/build"
+    ]
 }

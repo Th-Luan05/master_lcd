@@ -10,6 +10,12 @@
 extern "C" {
 #endif
 
+void lay_do_sang(lv_event_t * e);
+void lay_gioi_han(lv_event_t * e);
+void lay_time_cho(lv_event_t * e);
+void user_restart(lv_event_t * e);
+void user_reset(lv_event_t * e);
+
 #ifdef __cplusplus
 } /*extern "C"*/
 #endif

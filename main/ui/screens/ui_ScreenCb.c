@@ -21,6 +21,59 @@ lv_obj_t * ui_Label31 = NULL;
 lv_obj_t * ui_ButtonReset2 = NULL;
 lv_obj_t * ui_Label32 = NULL;
 // event funtions
+void ui_event_ImageCbbackSt(lv_event_t * e)
+{
+    lv_event_code_t event_code = lv_event_get_code(e);
+
+    if(event_code == LV_EVENT_CLICKED) {
+        _ui_screen_change(&ui_ScreenSetting, LV_SCREEN_LOAD_ANIM_FADE_ON, 0, 0, &ui_ScreenSetting_screen_init);
+    }
+}
+
+void ui_event_SliderLed(lv_event_t * e)
+{
+    lv_event_code_t event_code = lv_event_get_code(e);
+
+    if(event_code == LV_EVENT_VALUE_CHANGED) {
+        lay_do_sang(e);
+    }
+}
+
+void ui_event_SliderTem(lv_event_t * e)
+{
+    lv_event_code_t event_code = lv_event_get_code(e);
+
+    if(event_code == LV_EVENT_VALUE_CHANGED) {
+        lay_gioi_han(e);
+    }
+}
+
+void ui_event_SliderWaitingTime(lv_event_t * e)
+{
+    lv_event_code_t event_code = lv_event_get_code(e);
+
+    if(event_code == LV_EVENT_VALUE_CHANGED) {
+        lay_time_cho(e);
+    }
+}
+
+void ui_event_ButtonRST2(lv_event_t * e)
+{
+    lv_event_code_t event_code = lv_event_get_code(e);
+
+    if(event_code == LV_EVENT_CLICKED) {
+        user_restart(e);
+    }
+}
+
+void ui_event_ButtonReset2(lv_event_t * e)
+{
+    lv_event_code_t event_code = lv_event_get_code(e);
+
+    if(event_code == LV_EVENT_CLICKED) {
+        user_reset(e);
+    }
+}
 
 // build funtions
 
@@ -37,6 +90,7 @@ void ui_ScreenCb_screen_init(void)
     lv_obj_set_x(ui_ImageCbbackSt, -140);
     lv_obj_set_y(ui_ImageCbbackSt, -104);
     lv_obj_set_align(ui_ImageCbbackSt, LV_ALIGN_CENTER);
+    lv_obj_set_ext_click_area(ui_ImageCbbackSt, 2);
     lv_obj_add_flag(ui_ImageCbbackSt, LV_OBJ_FLAG_CLICKABLE);     /// Flags
     lv_obj_remove_flag(ui_ImageCbbackSt, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
     lv_obj_set_style_image_recolor(ui_ImageCbbackSt, lv_color_hex(0xFFFFFF), LV_PART_MAIN | LV_STATE_DEFAULT);
@@ -196,6 +250,13 @@ void ui_ScreenCb_screen_init(void)
     lv_obj_set_style_text_color(ui_Label32, lv_color_hex(0xFFFFFF), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_opa(ui_Label32, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_font(ui_Label32, &ui_font_Tiengviet14, LV_PART_MAIN | LV_STATE_DEFAULT);
+
+    lv_obj_add_event_cb(ui_ImageCbbackSt, ui_event_ImageCbbackSt, LV_EVENT_ALL, NULL);
+    lv_obj_add_event_cb(ui_SliderLed, ui_event_SliderLed, LV_EVENT_ALL, NULL);
+    lv_obj_add_event_cb(ui_SliderTem, ui_event_SliderTem, LV_EVENT_ALL, NULL);
+    lv_obj_add_event_cb(ui_SliderWaitingTime, ui_event_SliderWaitingTime, LV_EVENT_ALL, NULL);
+    lv_obj_add_event_cb(ui_ButtonRST2, ui_event_ButtonRST2, LV_EVENT_ALL, NULL);
+    lv_obj_add_event_cb(ui_ButtonReset2, ui_event_ButtonReset2, LV_EVENT_ALL, NULL);
 
 }
 

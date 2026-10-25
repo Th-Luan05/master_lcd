@@ -9,7 +9,7 @@ lv_obj_t * ui_ScreenCn = NULL;
 lv_obj_t * ui_ImageCnBackSt = NULL;
 lv_obj_t * ui_Label10 = NULL;
 lv_obj_t * ui_PanelScan = NULL;
-lv_obj_t * ui_ImageScan = NULL;
+lv_obj_t * ui_Spinner1 = NULL;
 lv_obj_t * ui_Label14 = NULL;
 lv_obj_t * ui_Panelwifi = NULL;
 lv_obj_t * ui_ContainerEnterWifi = NULL;
@@ -19,6 +19,14 @@ lv_obj_t * ui_LabeWifiCl = NULL;
 lv_obj_t * ui_ButtonConnetWifi = NULL;
 lv_obj_t * ui_Label23 = NULL;
 // event funtions
+void ui_event_ImageCnBackSt(lv_event_t * e)
+{
+    lv_event_code_t event_code = lv_event_get_code(e);
+
+    if(event_code == LV_EVENT_CLICKED) {
+        _ui_screen_change(&ui_ScreenSetting, LV_SCREEN_LOAD_ANIM_FADE_ON, 0, 0, &ui_ScreenSetting_screen_init);
+    }
+}
 
 // build funtions
 
@@ -36,6 +44,7 @@ void ui_ScreenCn_screen_init(void)
     lv_obj_set_x(ui_ImageCnBackSt, -140);
     lv_obj_set_y(ui_ImageCnBackSt, -104);
     lv_obj_set_align(ui_ImageCnBackSt, LV_ALIGN_CENTER);
+    lv_obj_set_ext_click_area(ui_ImageCnBackSt, 2);
     lv_obj_add_flag(ui_ImageCnBackSt, LV_OBJ_FLAG_CLICKABLE);     /// Flags
     lv_obj_remove_flag(ui_ImageCnBackSt, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
     lv_obj_set_style_image_recolor(ui_ImageCnBackSt, lv_color_hex(0xFFFFFF), LV_PART_MAIN | LV_STATE_DEFAULT);
@@ -60,21 +69,22 @@ void ui_ScreenCn_screen_init(void)
     lv_obj_set_style_bg_color(ui_PanelScan, lv_color_hex(0xFFFFFF), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_bg_opa(ui_PanelScan, 20, LV_PART_MAIN | LV_STATE_DEFAULT);
 
-    ui_ImageScan = lv_image_create(ui_PanelScan);
-    lv_image_set_src(ui_ImageScan, &ui_img_load24x24_png);
-    lv_obj_set_width(ui_ImageScan, LV_SIZE_CONTENT);   /// 24
-    lv_obj_set_height(ui_ImageScan, LV_SIZE_CONTENT);    /// 24
-    lv_obj_set_x(ui_ImageScan, -70);
-    lv_obj_set_y(ui_ImageScan, 0);
-    lv_obj_set_align(ui_ImageScan, LV_ALIGN_CENTER);
-    lv_obj_add_flag(ui_ImageScan, LV_OBJ_FLAG_CLICKABLE);     /// Flags
-    lv_obj_remove_flag(ui_ImageScan, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
-    lv_image_set_pivot(ui_ImageScan, 12, 12);
+    ui_Spinner1 = lv_spinner_create(ui_PanelScan);
+    //lv_spinner_set_anim_params(ui_Spinner1, 1000, 90);
+    lv_obj_set_width(ui_Spinner1, 33);
+    lv_obj_set_height(ui_Spinner1, 30);
+    lv_obj_set_x(ui_Spinner1, -69);
+    lv_obj_set_y(ui_Spinner1, -1);
+    lv_obj_set_align(ui_Spinner1, LV_ALIGN_CENTER);
+    lv_obj_remove_flag(ui_Spinner1, LV_OBJ_FLAG_CLICKABLE);      /// Flags
+    lv_obj_set_style_arc_width(ui_Spinner1, 5, LV_PART_MAIN | LV_STATE_DEFAULT);
+
+    lv_obj_set_style_arc_width(ui_Spinner1, 5, LV_PART_INDICATOR | LV_STATE_DEFAULT);
 
     ui_Label14 = lv_label_create(ui_PanelScan);
     lv_obj_set_width(ui_Label14, LV_SIZE_CONTENT);   /// 1
     lv_obj_set_height(ui_Label14, LV_SIZE_CONTENT);    /// 1
-    lv_obj_set_x(ui_Label14, 15);
+    lv_obj_set_x(ui_Label14, 17);
     lv_obj_set_y(ui_Label14, 0);
     lv_obj_set_align(ui_Label14, LV_ALIGN_CENTER);
     lv_label_set_text(ui_Label14, "Scanning for Wi-Fi");
@@ -89,6 +99,7 @@ void ui_ScreenCn_screen_init(void)
     lv_obj_set_align(ui_Panelwifi, LV_ALIGN_CENTER);
     lv_obj_set_flex_flow(ui_Panelwifi, LV_FLEX_FLOW_ROW_WRAP);
     lv_obj_set_flex_align(ui_Panelwifi, LV_FLEX_ALIGN_START, LV_FLEX_ALIGN_START, LV_FLEX_ALIGN_START);
+    lv_obj_add_flag(ui_Panelwifi, LV_OBJ_FLAG_HIDDEN);     /// Flags
     lv_obj_set_scrollbar_mode(ui_Panelwifi, LV_SCROLLBAR_MODE_OFF);
     lv_obj_set_style_bg_color(ui_Panelwifi, lv_color_hex(0xFFFFFF), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_bg_opa(ui_Panelwifi, 100, LV_PART_MAIN | LV_STATE_DEFAULT);
@@ -153,6 +164,7 @@ void ui_ScreenCn_screen_init(void)
     lv_obj_set_style_text_opa(ui_Label23, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_font(ui_Label23, &ui_font_Tiengviet16, LV_PART_MAIN | LV_STATE_DEFAULT);
 
+    lv_obj_add_event_cb(ui_ImageCnBackSt, ui_event_ImageCnBackSt, LV_EVENT_ALL, NULL);
     lv_keyboard_set_textarea(ui_Keyboard1, ui_TextAreapasswwifi);
 
 }
@@ -166,7 +178,7 @@ void ui_ScreenCn_screen_destroy(void)
     ui_ImageCnBackSt = NULL;
     ui_Label10 = NULL;
     ui_PanelScan = NULL;
-    ui_ImageScan = NULL;
+    ui_Spinner1 = NULL;
     ui_Label14 = NULL;
     ui_Panelwifi = NULL;
     ui_ContainerEnterWifi = NULL;

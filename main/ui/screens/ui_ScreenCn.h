@@ -14,10 +14,11 @@ extern "C" {
 extern void ui_ScreenCn_screen_init(void);
 extern void ui_ScreenCn_screen_destroy(void);
 extern lv_obj_t * ui_ScreenCn;
+extern void ui_event_ImageCnBackSt(lv_event_t * e);
 extern lv_obj_t * ui_ImageCnBackSt;
 extern lv_obj_t * ui_Label10;
 extern lv_obj_t * ui_PanelScan;
-extern lv_obj_t * ui_ImageScan;
+extern lv_obj_t * ui_Spinner1;
 extern lv_obj_t * ui_Label14;
 extern lv_obj_t * ui_Panelwifi;
 extern lv_obj_t * ui_ContainerEnterWifi;

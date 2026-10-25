@@ -7,7 +7,6 @@
 #include "ui_helpers.h"
 
 ///////////////////// VARIABLES ////////////////////
-lv_anim_t * xoayanh_Animation(lv_obj_t * TargetObject, int delay);
 
 // EVENTS
 lv_obj_t * ui____initial_actions0;
@@ -20,31 +19,6 @@ lv_obj_t * ui____initial_actions0;
 #endif
 
 ///////////////////// ANIMATIONS ////////////////////
-lv_anim_t * xoayanh_Animation(lv_obj_t * TargetObject, int delay)
-{
-    lv_anim_t * out_anim;
-    ui_anim_user_data_t * PropertyAnimation_0_user_data = lv_malloc(sizeof(ui_anim_user_data_t));
-    PropertyAnimation_0_user_data->target = TargetObject;
-
-    PropertyAnimation_0_user_data->val = -1;
-    lv_anim_t PropertyAnimation_0;
-    lv_anim_init(&PropertyAnimation_0);
-    lv_anim_set_duration(&PropertyAnimation_0, 2000);
-    lv_anim_set_user_data(&PropertyAnimation_0, PropertyAnimation_0_user_data);
-    lv_anim_set_custom_exec_cb(&PropertyAnimation_0, _ui_anim_callback_set_image_angle);
-    lv_anim_set_values(&PropertyAnimation_0, 0, 3600);
-    lv_anim_set_path_cb(&PropertyAnimation_0, lv_anim_path_linear);
-    lv_anim_set_delay(&PropertyAnimation_0, delay + 0);
-    lv_anim_set_deleted_cb(&PropertyAnimation_0, _ui_anim_callback_free_user_data);
-    lv_anim_set_reverse_duration(&PropertyAnimation_0, 0);
-    lv_anim_set_reverse_delay(&PropertyAnimation_0, 0);
-    lv_anim_set_repeat_count(&PropertyAnimation_0, LV_ANIM_REPEAT_INFINITE);
-    lv_anim_set_repeat_delay(&PropertyAnimation_0, 0);
-    lv_anim_set_early_apply(&PropertyAnimation_0, false);
-    out_anim = lv_anim_start(&PropertyAnimation_0);
-
-    return out_anim;
-}
 
 ///////////////////// FUNCTIONS ////////////////////
 
@@ -60,7 +34,7 @@ void ui_init(void)
     ui_ScreenCn_screen_init();
     ui_ScreenCb_screen_init();
     ui_ScreenStandby_screen_init();
-    ui_Screen2_screen_init();
+    ui_ScreenHome_screen_init();
     ui____initial_actions0 = lv_obj_create(NULL);
     lv_disp_load_scr(ui_ScreenSetting);
 }
@@ -71,5 +45,5 @@ void ui_destroy(void)
     ui_ScreenCn_screen_destroy();
     ui_ScreenCb_screen_destroy();
     ui_ScreenStandby_screen_destroy();
-    ui_Screen2_screen_destroy();
+    ui_ScreenHome_screen_destroy();
 }

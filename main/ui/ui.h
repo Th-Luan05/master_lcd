@@ -20,10 +20,9 @@ extern "C" {
 #include "screens/ui_ScreenCn.h"
 #include "screens/ui_ScreenCb.h"
 #include "screens/ui_ScreenStandby.h"
-#include "screens/ui_Screen2.h"
+#include "screens/ui_ScreenHome.h"
 
 ///////////////////// VARIABLES ////////////////////
-extern lv_anim_t * xoayanh_Animation(lv_obj_t * TargetObject, int delay);
 
 // EVENTS
 extern lv_obj_t * ui____initial_actions0;
@@ -33,7 +32,6 @@ LV_IMG_DECLARE(ui_img_028_png);    // assets/028.png
 LV_IMG_DECLARE(ui_img_house_png);    // assets/house.png
 LV_IMG_DECLARE(ui_img_settings_png);    // assets/settings.png
 LV_IMG_DECLARE(ui_img_1470730272);    // assets/arrow-left.png
-LV_IMG_DECLARE(ui_img_load24x24_png);    // assets/load24x24.png
 LV_IMG_DECLARE(ui_img_nensang_png);    // assets/nensang.png
 LV_IMG_DECLARE(ui_img_wifi_png);    // assets/wifi.png
 LV_IMG_DECLARE(ui_img_62997641);    // assets/wifi-zero.png
@@ -46,6 +44,7 @@ LV_IMG_DECLARE(ui_img_2034138760);    // assets/nang170).png
 LV_IMG_DECLARE(ui_img_mua180_png);    // assets/mua180.png
 LV_IMG_DECLARE(ui_img_dem180_png);    // assets/dem180.png
 LV_IMG_DECLARE(ui_img_muto180_png);    // assets/muto180.png
+LV_IMG_DECLARE(ui_img_754235436);    // assets/wifi-off.png
 
 // FONTS
 LV_FONT_DECLARE(ui_font_Tiengviet14);
