@@ -569,6 +569,7 @@
 /home/luan/Documents/Espressif/Esp32_Project/build/esp-idf/esp_gdbstub/CMakeFiles/install.dir
 /home/luan/Documents/Espressif/Esp32_Project/build/esp-idf/esp_gdbstub/CMakeFiles/install/local.dir
 /home/luan/Documents/Espressif/Esp32_Project/build/esp-idf/esp_gdbstub/CMakeFiles/install/strip.dir
+/home/luan/Documents/Espressif/Esp32_Project/build/esp-idf/bt/CMakeFiles/__idf_bt.dir
 /home/luan/Documents/Espressif/Esp32_Project/build/esp-idf/bt/CMakeFiles/edit_cache.dir
 /home/luan/Documents/Espressif/Esp32_Project/build/esp-idf/bt/CMakeFiles/rebuild_cache.dir
 /home/luan/Documents/Espressif/Esp32_Project/build/esp-idf/bt/CMakeFiles/list_install_components.dir

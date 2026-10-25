@@ -53,6 +53,7 @@
 /home/luan/Documents/Espressif/Esp32_Project/build/esp-idf/esp_coex/libesp_coex.a
 /home/luan/Documents/Espressif/Esp32_Project/build/esp-idf/esp_wifi/libesp_wifi.a
 /home/luan/Documents/Espressif/Esp32_Project/build/esp-idf/esp_gdbstub/libesp_gdbstub.a
+/home/luan/Documents/Espressif/Esp32_Project/build/esp-idf/bt/libbt.a
 /home/luan/Documents/Espressif/Esp32_Project/build/esp-idf/unity/libunity.a
 /home/luan/Documents/Espressif/Esp32_Project/build/esp-idf/cmock/libcmock.a
 /home/luan/Documents/Espressif/Esp32_Project/build/esp-idf/console/libconsole.a

@@ -7,6 +7,8 @@
 #include "esp_system.h"
 #include "nvs_flash.h"
 
+#include "app_config.h"
+
 void user_restart(lv_event_t * e)
 {
 	// Your code here
@@ -23,6 +25,8 @@ void user_reset(lv_event_t * e)
 void lay_do_sang(lv_event_t * e)
 {
 	// Your code here
+	uint8_t value = lv_slider_get_value(ui_SliderLed);
+	lcd_set_brightness(value);
 }
 
 void lay_gioi_han(lv_event_t * e)

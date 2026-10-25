@@ -1,4 +1,5 @@
 #include "LCD.h"
+#include "app_config.h"
 
 #include <math.h>
 #include <stdbool.h>
@@ -29,7 +30,8 @@
 #define TOUCH_IRQ_PIN      22
 #define LCD_DC_PIN         4
 #define LCD_RST_PIN        2
-#define LCD_BK_LIGHT_PIN   32
+
+
 #define LCD_H_RES          320
 #define LCD_V_RES          240
 #define LCD_PIXEL_CLOCK_HZ (10 * 1000 * 1000)
@@ -62,12 +64,11 @@ static touch_cal_t s_cal;
 
 static esp_err_t lcd_hardware_init(void)
 {
-    const gpio_config_t backlight_config = {
-        .pin_bit_mask = 1ULL << LCD_BK_LIGHT_PIN,
-        .mode = GPIO_MODE_OUTPUT,
-    };
-    ESP_RETURN_ON_ERROR(gpio_config(&backlight_config), TAG, "Backlight GPIO init failed");
-
+    ESP_RETURN_ON_ERROR(
+        lcd_backlight_init(),
+        TAG,
+        "Backlight PWM init failed"
+    );
     const spi_bus_config_t bus_config = {
         .sclk_io_num = LCD_SCLK_PIN,
         .mosi_io_num = LCD_MOSI_PIN,
@@ -90,7 +91,7 @@ static esp_err_t lcd_hardware_init(void)
     };
     ESP_RETURN_ON_ERROR(esp_lcd_new_panel_io_spi((esp_lcd_spi_bus_handle_t)SPI3_HOST,
                                                   &lcd_io_config, &lcd_io), TAG,
-                        "LCD panel IO init failed");
+                        "LCD panel IO inits failed");
 
     const esp_lcd_panel_dev_config_t panel_config = {
         .reset_gpio_num = LCD_RST_PIN,
@@ -132,8 +133,8 @@ static esp_err_t lcd_hardware_init(void)
     };
     ESP_RETURN_ON_ERROR(esp_lcd_touch_new_spi_xpt2046(touch_io, &touch_config, &touch_handle), TAG,
                         "Touch controller init failed");
-
-    return gpio_set_level(LCD_BK_LIGHT_PIN, 1);
+    ESP_ERROR_CHECK(lcd_set_brightness(80));
+    return ESP_OK;
 }
 
 static void lcd_lvgl_init(void)
@@ -152,7 +153,8 @@ static void lcd_lvgl_init(void)
             .mirror_y = false,
         },
         .flags = {
-            .buff_dma = true,
+            .buff_spiram = true,   // Bật dùng SPIRAM/PSRAM
+            .buff_dma = false,     // Phải tắt DMA vì SPIRAM không dùng chung với DMA được
 #if LVGL_VERSION_MAJOR >= 9
             .swap_bytes = true,
 #endif

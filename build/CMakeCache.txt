@@ -14,6 +14,9 @@
 # EXTERNAL cache entries
 ########################
 
+//No help, variable specified on the command line.
+CCACHE_ENABLE:UNINITIALIZED=0
+
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/xtensa-esp32-elf-addr2line
 
@@ -363,6 +366,9 @@ Mbed TLS_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
 Mbed TLS_SOURCE_DIR:STATIC=/home/luan/.espressif/v5.4.4/esp-idf/components/mbedtls/mbedtls
+
+//No help, variable specified on the command line.
+PYTHON:UNINITIALIZED=/home/luan/.espressif/tools/python/v5.4.4/venv/bin/python
 
 //No help, variable specified on the command line.
 PYTHON_DEPS_CHECKED:UNINITIALIZED=1
