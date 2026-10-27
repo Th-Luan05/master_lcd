@@ -3,4 +3,4 @@ source "/home/luan/.espressif/v5.4.4/esp-idf/components/esp_app_format/Kconfig.p
 source "/home/luan/.espressif/v5.4.4/esp-idf/components/esp_rom/Kconfig.projbuild"
 source "/home/luan/.espressif/v5.4.4/esp-idf/components/esptool_py/Kconfig.projbuild"
 source "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/Kconfig.projbuild"
-source "/home/luan/Documents/Espressif/Esp32_Project/managed_components/atanisoft__esp_lcd_touch_xpt2046/Kconfig.projbuild"
+source "/home/luan/Documents/Custom Office Templates/gh/master_lcd/managed_components/atanisoft__esp_lcd_touch_xpt2046/Kconfig.projbuild"

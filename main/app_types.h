@@ -22,6 +22,8 @@ typedef struct {
     uint8_t  want_tries;
     uint32_t want_ms;
     uint32_t fw;
+    uint8_t  area, dtype;          // <-- them
+    char     name[NAME_LEN];       // <-- them (NAME_LEN lay tu proto.h)
     bool     ota_pending, ota_check_only;
     uint8_t  ota_tries;
     uint32_t ota_ms;

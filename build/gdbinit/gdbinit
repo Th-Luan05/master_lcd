@@ -1,2 +1,2 @@
-source /home/luan/Documents/Espressif/Esp32_Project/build/gdbinit/symbols
-source /home/luan/Documents/Espressif/Esp32_Project/build/gdbinit/connect
+source /home/luan/Documents/Custom Office Templates/gh/master_lcd/build/gdbinit/symbols
+source /home/luan/Documents/Custom Office Templates/gh/master_lcd/build/gdbinit/connect

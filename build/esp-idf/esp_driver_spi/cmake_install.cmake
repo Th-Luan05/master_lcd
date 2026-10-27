@@ -40,6 +40,6 @@ endif()
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/luan/Documents/Espressif/Esp32_Project/build/esp-idf/esp_driver_spi/install_local_manifest.txt"
+  file(WRITE "/home/luan/Documents/Custom Office Templates/gh/master_lcd/build/esp-idf/esp_driver_spi/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

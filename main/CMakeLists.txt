@@ -14,6 +14,7 @@ idf_component_register(
         "ota_app.c"
         "mqtt_app.c"
         "giaodien.c"
+        "wifi_mgr.c"
         ${SRC_UI}
     INCLUDE_DIRS
         "."

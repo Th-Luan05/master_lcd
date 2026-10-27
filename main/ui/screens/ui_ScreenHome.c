@@ -13,7 +13,7 @@ lv_obj_t * ui_WifiHigh = NULL;
 lv_obj_t * ui_WifiLow = NULL;
 lv_obj_t * ui_WifiZero = NULL;
 lv_obj_t * ui_WifiOff = NULL;
-lv_obj_t * ui_Container2 = NULL;
+lv_obj_t * ui_ContainerDevice = NULL;
 // event funtions
 void ui_event_ImgToSetting(lv_event_t * e)
 {
@@ -103,22 +103,22 @@ void ui_ScreenHome_screen_init(void)
     lv_obj_add_flag(ui_WifiOff, LV_OBJ_FLAG_HIDDEN | LV_OBJ_FLAG_CLICKABLE);     /// Flags
     lv_obj_remove_flag(ui_WifiOff, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
 
-    ui_Container2 = lv_obj_create(ui_ScreenHome);
-    lv_obj_remove_style_all(ui_Container2);
-    lv_obj_set_width(ui_Container2, 297);
-    lv_obj_set_height(ui_Container2, 192);
-    lv_obj_set_x(ui_Container2, 0);
-    lv_obj_set_y(ui_Container2, 18);
-    lv_obj_set_align(ui_Container2, LV_ALIGN_CENTER);
-    lv_obj_set_flex_flow(ui_Container2, LV_FLEX_FLOW_ROW_WRAP);
-    lv_obj_set_flex_align(ui_Container2, LV_FLEX_ALIGN_START, LV_FLEX_ALIGN_START, LV_FLEX_ALIGN_START);
-    lv_obj_remove_flag(ui_Container2, LV_OBJ_FLAG_CLICKABLE);      /// Flags
-    lv_obj_set_scrollbar_mode(ui_Container2, LV_SCROLLBAR_MODE_OFF);
-    lv_obj_set_scroll_snap_x(ui_Container2, LV_SCROLL_SNAP_START);
-    lv_obj_set_style_bg_color(ui_Container2, lv_color_hex(0x000000), LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_bg_opa(ui_Container2, 80, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_pad_row(ui_Container2, 10, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_pad_column(ui_Container2, 8, LV_PART_MAIN | LV_STATE_DEFAULT);
+    ui_ContainerDevice = lv_obj_create(ui_ScreenHome);
+    lv_obj_remove_style_all(ui_ContainerDevice);
+    lv_obj_set_width(ui_ContainerDevice, 297);
+    lv_obj_set_height(ui_ContainerDevice, 192);
+    lv_obj_set_x(ui_ContainerDevice, 0);
+    lv_obj_set_y(ui_ContainerDevice, 18);
+    lv_obj_set_align(ui_ContainerDevice, LV_ALIGN_CENTER);
+    lv_obj_set_flex_flow(ui_ContainerDevice, LV_FLEX_FLOW_ROW_WRAP);
+    lv_obj_set_flex_align(ui_ContainerDevice, LV_FLEX_ALIGN_START, LV_FLEX_ALIGN_START, LV_FLEX_ALIGN_START);
+    lv_obj_remove_flag(ui_ContainerDevice, LV_OBJ_FLAG_CLICKABLE);      /// Flags
+    lv_obj_set_scrollbar_mode(ui_ContainerDevice, LV_SCROLLBAR_MODE_OFF);
+    lv_obj_set_scroll_snap_x(ui_ContainerDevice, LV_SCROLL_SNAP_START);
+    lv_obj_set_style_bg_color(ui_ContainerDevice, lv_color_hex(0x000000), LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_bg_opa(ui_ContainerDevice, 80, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_pad_row(ui_ContainerDevice, 10, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_pad_column(ui_ContainerDevice, 8, LV_PART_MAIN | LV_STATE_DEFAULT);
 
     lv_obj_add_event_cb(ui_ImgToSetting, ui_event_ImgToSetting, LV_EVENT_ALL, NULL);
 
@@ -137,6 +137,6 @@ void ui_ScreenHome_screen_destroy(void)
     ui_WifiLow = NULL;
     ui_WifiZero = NULL;
     ui_WifiOff = NULL;
-    ui_Container2 = NULL;
+    ui_ContainerDevice = NULL;
 
 }

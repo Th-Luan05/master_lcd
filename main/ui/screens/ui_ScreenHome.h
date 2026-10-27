@@ -22,7 +22,7 @@ extern lv_obj_t * ui_WifiHigh;
 extern lv_obj_t * ui_WifiLow;
 extern lv_obj_t * ui_WifiZero;
 extern lv_obj_t * ui_WifiOff;
-extern lv_obj_t * ui_Container2;
+extern lv_obj_t * ui_ContainerDevice;
 // CUSTOM VARIABLES
 
 #ifdef __cplusplus

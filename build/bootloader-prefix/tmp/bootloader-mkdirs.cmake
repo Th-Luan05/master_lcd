@@ -10,18 +10,18 @@ if(NOT EXISTS "/home/luan/.espressif/v5.4.4/esp-idf/components/bootloader/subpro
   file(MAKE_DIRECTORY "/home/luan/.espressif/v5.4.4/esp-idf/components/bootloader/subproject")
 endif()
 file(MAKE_DIRECTORY
-  "/home/luan/Documents/Espressif/Esp32_Project/build/bootloader"
-  "/home/luan/Documents/Espressif/Esp32_Project/build/bootloader-prefix"
-  "/home/luan/Documents/Espressif/Esp32_Project/build/bootloader-prefix/tmp"
-  "/home/luan/Documents/Espressif/Esp32_Project/build/bootloader-prefix/src/bootloader-stamp"
-  "/home/luan/Documents/Espressif/Esp32_Project/build/bootloader-prefix/src"
-  "/home/luan/Documents/Espressif/Esp32_Project/build/bootloader-prefix/src/bootloader-stamp"
+  "/home/luan/Documents/Custom Office Templates/gh/master_lcd/build/bootloader"
+  "/home/luan/Documents/Custom Office Templates/gh/master_lcd/build/bootloader-prefix"
+  "/home/luan/Documents/Custom Office Templates/gh/master_lcd/build/bootloader-prefix/tmp"
+  "/home/luan/Documents/Custom Office Templates/gh/master_lcd/build/bootloader-prefix/src/bootloader-stamp"
+  "/home/luan/Documents/Custom Office Templates/gh/master_lcd/build/bootloader-prefix/src"
+  "/home/luan/Documents/Custom Office Templates/gh/master_lcd/build/bootloader-prefix/src/bootloader-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "/home/luan/Documents/Espressif/Esp32_Project/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
+    file(MAKE_DIRECTORY "/home/luan/Documents/Custom Office Templates/gh/master_lcd/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "/home/luan/Documents/Espressif/Esp32_Project/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "/home/luan/Documents/Custom Office Templates/gh/master_lcd/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
 endif()

@@ -37,18 +37,21 @@ void mac_to_str(const uint8_t *m, char *out /*13*/) {
     return len == (int)strlen(s) && memcmp(p, s, len) == 0;
 }
 
- void log_memory_usage(void) {
+void log_memory_usage(void) {
     size_t free_heap = esp_get_free_heap_size();
     size_t internal_free = heap_caps_get_free_size(MALLOC_CAP_INTERNAL);
-    size_t largest_block = heap_caps_get_largest_free_block(MALLOC_CAP_8BIT);
+    size_t spiram_free = heap_caps_get_free_size(MALLOC_CAP_SPIRAM);
+    size_t largest_internal = heap_caps_get_largest_free_block(MALLOC_CAP_INTERNAL);
+    size_t largest_spiram = heap_caps_get_largest_free_block(MALLOC_CAP_SPIRAM);
 
-    ESP_LOGI(TAG, "RAM heap: free=%u bytes (%u KB), min=%u bytes, internal=%u bytes, largest=%u bytes",
-             (unsigned)free_heap,
+    ESP_LOGI(TAG,
+             "heap total=%u KB, internal free=%u KB (largest %u KB), psram free=%u KB (largest %u KB), min=%u KB",
              (unsigned)(free_heap / 1024),
-             (unsigned)esp_get_minimum_free_heap_size(),
-             (unsigned)internal_free,
-             (unsigned)largest_block);
-
+             (unsigned)(internal_free / 1024),
+             (unsigned)(largest_internal / 1024),
+             (unsigned)(spiram_free / 1024),
+             (unsigned)(largest_spiram / 1024),
+             (unsigned)(esp_get_minimum_free_heap_size() / 1024));
 }
 
  void time_start(void) {

@@ -19,6 +19,7 @@
 #include "host/ble_hs.h"
 #include "host/util/util.h"
 
+#include "wifi_mgr.h" 
 #include "app_config.h"
 #include "tien_ich.h"
 #include "mqtt_app.h"
@@ -172,6 +173,10 @@ static void handle_telemetry(const rx_item_t *it, const pkt_t *p) {
     n->cut_c   = p->cut_c;
     n->last_ms = now_ms();
     n->fw      = p->fw_ver;
+    n->area  = p->area;
+    n->dtype = p->dtype;
+    memcpy(n->name, p->name, NAME_LEN);
+    n->name[NAME_LEN - 1] = 0;
     if (it->is_udp) {
         n->addr = it->from;
         n->addr.sin_port = htons(UDP_PORT);
@@ -396,8 +401,8 @@ static int provision_one(const ble_addr_t *addr) {
 static void build_blob(prov_blob_t *b) {
     memset(b, 0, sizeof(*b));
     b->magic = PROV_MAGIC;
-    strlcpy(b->ssid, WIFI_SSID, sizeof(b->ssid));
-    strlcpy(b->pass, WIFI_PASS, sizeof(b->pass));
+    strlcpy(b->ssid, wifi_mgr_get_ssid(), sizeof(b->ssid));   // sua
+    strlcpy(b->pass, wifi_mgr_get_pass(), sizeof(b->pass));   // sua
     wifi_ap_record_t ap;
     if (esp_wifi_sta_get_ap_info(&ap) == ESP_OK) b->channel = ap.primary;
     esp_read_mac(b->master_mac, ESP_MAC_WIFI_STA);

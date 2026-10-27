@@ -5,9 +5,6 @@
 #include <stdint.h>
 #include "esp_err.h"
 
-#define WIFI_SSID           "Hoi Chu Tro"
-#define WIFI_PASS           "bodeocho"
-#define WIFI_CONNECTED_BIT  BIT0
 
 #define MQTT_BROKER_URI     "wss://mqtt.thanhluan.io.vn/mqtt"
 #define MQTT_USERNAME       "esp32_node1"

@@ -23,7 +23,9 @@ events:
     names:
       - "git"
     candidate_directories:
-      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/"
       - "/home/luan/.espressif/tools/esp-clang/esp-18.1.2_20240912/esp-clang/bin/"
       - "/home/luan/.espressif/tools/esp-rom-elfs/20241011/"
       - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/"
@@ -36,9 +38,7 @@ events:
       - "/home/luan/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/"
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/"
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/bin/"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/"
+      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/"
       - "/home/luan/.local/bin/"
       - "/home/luan/bin/"
       - "/usr/lib64/ccache/"
@@ -46,7 +46,9 @@ events:
       - "/usr/bin/"
       - "/bin/"
     searched_directories:
-      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/git"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/git"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/git"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/git"
       - "/home/luan/.espressif/tools/esp-clang/esp-18.1.2_20240912/esp-clang/bin/git"
       - "/home/luan/.espressif/tools/esp-rom-elfs/20241011/git"
       - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/git"
@@ -59,9 +61,7 @@ events:
       - "/home/luan/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/git"
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/git"
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/bin/git"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/git"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/git"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/git"
+      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/git"
       - "/home/luan/.local/bin/git"
       - "/home/luan/bin/git"
       - "/usr/lib64/ccache/git"
@@ -69,20 +69,6 @@ events:
     found: "/usr/bin/git"
     search_context:
       ENV{PATH}:
-        - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin"
-        - "/home/luan/.espressif/tools/esp-clang/esp-18.1.2_20240912/esp-clang/bin"
-        - "/home/luan/.espressif/tools/esp-rom-elfs/20241011/"
-        - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin"
-        - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/esp32ulp-elf/bin"
-        - "/home/luan/.espressif/tools/ninja/1.12.1/"
-        - "/home/luan/.espressif/tools/openocd-esp32/v0.12.0-esp32-20260304/openocd-esp32/bin"
-        - "/home/luan/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin"
-        - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/bin"
-        - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/riscv32-esp-elf/bin"
-        - "/home/luan/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin"
-        - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin"
-        - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/bin"
-        - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin"
         - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump"
         - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table"
         - "/home/luan/.espressif/v5.4.4/esp-idf/tools"
@@ -125,7 +111,9 @@ events:
     names:
       - "uname"
     candidate_directories:
-      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/"
       - "/home/luan/.espressif/tools/esp-clang/esp-18.1.2_20240912/esp-clang/bin/"
       - "/home/luan/.espressif/tools/esp-rom-elfs/20241011/"
       - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/"
@@ -138,9 +126,7 @@ events:
       - "/home/luan/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/"
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/"
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/bin/"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/"
+      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/"
       - "/home/luan/.local/bin/"
       - "/home/luan/bin/"
       - "/usr/lib64/ccache/"
@@ -148,7 +134,9 @@ events:
       - "/usr/bin/"
       - "/bin/"
     searched_directories:
-      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/uname"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/uname"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/uname"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/uname"
       - "/home/luan/.espressif/tools/esp-clang/esp-18.1.2_20240912/esp-clang/bin/uname"
       - "/home/luan/.espressif/tools/esp-rom-elfs/20241011/uname"
       - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/uname"
@@ -161,9 +149,7 @@ events:
       - "/home/luan/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/uname"
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/uname"
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/bin/uname"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/uname"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/uname"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/uname"
+      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/uname"
       - "/home/luan/.local/bin/uname"
       - "/home/luan/bin/uname"
       - "/usr/lib64/ccache/uname"
@@ -171,20 +157,6 @@ events:
     found: "/usr/bin/uname"
     search_context:
       ENV{PATH}:
-        - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin"
-        - "/home/luan/.espressif/tools/esp-clang/esp-18.1.2_20240912/esp-clang/bin"
-        - "/home/luan/.espressif/tools/esp-rom-elfs/20241011/"
-        - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin"
-        - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/esp32ulp-elf/bin"
-        - "/home/luan/.espressif/tools/ninja/1.12.1/"
-        - "/home/luan/.espressif/tools/openocd-esp32/v0.12.0-esp32-20260304/openocd-esp32/bin"
-        - "/home/luan/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin"
-        - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/bin"
-        - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/riscv32-esp-elf/bin"
-        - "/home/luan/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin"
-        - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin"
-        - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/bin"
-        - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin"
         - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump"
         - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table"
         - "/home/luan/.espressif/v5.4.4/esp-idf/tools"
@@ -238,7 +210,9 @@ events:
       - "ninja"
       - "samu"
     candidate_directories:
-      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/"
       - "/home/luan/.espressif/tools/esp-clang/esp-18.1.2_20240912/esp-clang/bin/"
       - "/home/luan/.espressif/tools/esp-rom-elfs/20241011/"
       - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/"
@@ -251,9 +225,7 @@ events:
       - "/home/luan/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/"
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/"
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/bin/"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/"
+      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/"
       - "/home/luan/.local/bin/"
       - "/home/luan/bin/"
       - "/usr/lib64/ccache/"
@@ -261,9 +233,15 @@ events:
       - "/usr/bin/"
       - "/bin/"
     searched_directories:
-      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/ninja-build"
-      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/ninja"
-      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/samu"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/ninja-build"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/ninja"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/samu"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/ninja-build"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/ninja"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/samu"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/ninja-build"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/ninja"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/samu"
       - "/home/luan/.espressif/tools/esp-clang/esp-18.1.2_20240912/esp-clang/bin/ninja-build"
       - "/home/luan/.espressif/tools/esp-clang/esp-18.1.2_20240912/esp-clang/bin/ninja"
       - "/home/luan/.espressif/tools/esp-clang/esp-18.1.2_20240912/esp-clang/bin/samu"
@@ -280,20 +258,6 @@ events:
     found: "/home/luan/.espressif/tools/ninja/1.12.1/ninja"
     search_context:
       ENV{PATH}:
-        - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin"
-        - "/home/luan/.espressif/tools/esp-clang/esp-18.1.2_20240912/esp-clang/bin"
-        - "/home/luan/.espressif/tools/esp-rom-elfs/20241011/"
-        - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin"
-        - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/esp32ulp-elf/bin"
-        - "/home/luan/.espressif/tools/ninja/1.12.1/"
-        - "/home/luan/.espressif/tools/openocd-esp32/v0.12.0-esp32-20260304/openocd-esp32/bin"
-        - "/home/luan/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin"
-        - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/bin"
-        - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/riscv32-esp-elf/bin"
-        - "/home/luan/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin"
-        - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin"
-        - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/bin"
-        - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin"
         - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump"
         - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table"
         - "/home/luan/.espressif/v5.4.4/esp-idf/tools"
@@ -337,7 +301,9 @@ events:
     names:
       - "xtensa-esp32-elf-gcc"
     candidate_directories:
-      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/"
       - "/home/luan/.espressif/tools/esp-clang/esp-18.1.2_20240912/esp-clang/bin/"
       - "/home/luan/.espressif/tools/esp-rom-elfs/20241011/"
       - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/"
@@ -350,9 +316,7 @@ events:
       - "/home/luan/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/"
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/"
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/bin/"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/"
+      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/"
       - "/home/luan/.local/bin/"
       - "/home/luan/bin/"
       - "/usr/lib64/ccache/"
@@ -360,7 +324,9 @@ events:
       - "/usr/bin/"
       - "/bin/"
     searched_directories:
-      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/xtensa-esp32-elf-gcc"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/xtensa-esp32-elf-gcc"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/xtensa-esp32-elf-gcc"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/xtensa-esp32-elf-gcc"
       - "/home/luan/.espressif/tools/esp-clang/esp-18.1.2_20240912/esp-clang/bin/xtensa-esp32-elf-gcc"
       - "/home/luan/.espressif/tools/esp-rom-elfs/20241011/xtensa-esp32-elf-gcc"
       - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/xtensa-esp32-elf-gcc"
@@ -374,20 +340,6 @@ events:
     found: "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc"
     search_context:
       ENV{PATH}:
-        - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin"
-        - "/home/luan/.espressif/tools/esp-clang/esp-18.1.2_20240912/esp-clang/bin"
-        - "/home/luan/.espressif/tools/esp-rom-elfs/20241011/"
-        - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin"
-        - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/esp32ulp-elf/bin"
-        - "/home/luan/.espressif/tools/ninja/1.12.1/"
-        - "/home/luan/.espressif/tools/openocd-esp32/v0.12.0-esp32-20260304/openocd-esp32/bin"
-        - "/home/luan/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin"
-        - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/bin"
-        - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/riscv32-esp-elf/bin"
-        - "/home/luan/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin"
-        - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin"
-        - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/bin"
-        - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin"
         - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump"
         - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table"
         - "/home/luan/.espressif/v5.4.4/esp-idf/tools"
@@ -440,20 +392,6 @@ events:
     found: "/usr/share/cmake/Modules/CMakeCCompilerId.c.in"
     search_context:
       ENV{PATH}:
-        - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin"
-        - "/home/luan/.espressif/tools/esp-clang/esp-18.1.2_20240912/esp-clang/bin"
-        - "/home/luan/.espressif/tools/esp-rom-elfs/20241011/"
-        - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin"
-        - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/esp32ulp-elf/bin"
-        - "/home/luan/.espressif/tools/ninja/1.12.1/"
-        - "/home/luan/.espressif/tools/openocd-esp32/v0.12.0-esp32-20260304/openocd-esp32/bin"
-        - "/home/luan/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin"
-        - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/bin"
-        - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/riscv32-esp-elf/bin"
-        - "/home/luan/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin"
-        - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin"
-        - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/bin"
-        - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin"
         - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump"
         - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table"
         - "/home/luan/.espressif/v5.4.4/esp-idf/tools"
@@ -497,7 +435,7 @@ events:
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
       
       The C compiler identification is GNU, found in:
-        /home/luan/Documents/Espressif/Esp32_Project/build/bootloader/CMakeFiles/4.3.0/CompilerIdC/a.out
+        /home/luan/Documents/Custom Office Templates/gh/master_lcd/build/bootloader/CMakeFiles/4.3.0/CompilerIdC/a.out
       
   -
     kind: "find-v1"
@@ -522,7 +460,9 @@ events:
       - "ar"
     candidate_directories:
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/"
-      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/"
       - "/home/luan/.espressif/tools/esp-clang/esp-18.1.2_20240912/esp-clang/bin/"
       - "/home/luan/.espressif/tools/esp-rom-elfs/20241011/"
       - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/"
@@ -534,9 +474,7 @@ events:
       - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/riscv32-esp-elf/bin/"
       - "/home/luan/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/"
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/bin/"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/"
+      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/"
       - "/home/luan/.local/bin/"
       - "/home/luan/bin/"
       - "/usr/lib64/ccache/"
@@ -546,20 +484,6 @@ events:
     found: "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/xtensa-esp32-elf-ar"
     search_context:
       ENV{PATH}:
-        - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin"
-        - "/home/luan/.espressif/tools/esp-clang/esp-18.1.2_20240912/esp-clang/bin"
-        - "/home/luan/.espressif/tools/esp-rom-elfs/20241011/"
-        - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin"
-        - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/esp32ulp-elf/bin"
-        - "/home/luan/.espressif/tools/ninja/1.12.1/"
-        - "/home/luan/.espressif/tools/openocd-esp32/v0.12.0-esp32-20260304/openocd-esp32/bin"
-        - "/home/luan/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin"
-        - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/bin"
-        - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/riscv32-esp-elf/bin"
-        - "/home/luan/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin"
-        - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin"
-        - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/bin"
-        - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin"
         - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump"
         - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table"
         - "/home/luan/.espressif/v5.4.4/esp-idf/tools"
@@ -605,7 +529,9 @@ events:
       - "ranlib"
     candidate_directories:
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/"
-      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/"
       - "/home/luan/.espressif/tools/esp-clang/esp-18.1.2_20240912/esp-clang/bin/"
       - "/home/luan/.espressif/tools/esp-rom-elfs/20241011/"
       - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/"
@@ -617,9 +543,7 @@ events:
       - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/riscv32-esp-elf/bin/"
       - "/home/luan/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/"
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/bin/"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/"
+      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/"
       - "/home/luan/.local/bin/"
       - "/home/luan/bin/"
       - "/usr/lib64/ccache/"
@@ -629,20 +553,6 @@ events:
     found: "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/xtensa-esp32-elf-ranlib"
     search_context:
       ENV{PATH}:
-        - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin"
-        - "/home/luan/.espressif/tools/esp-clang/esp-18.1.2_20240912/esp-clang/bin"
-        - "/home/luan/.espressif/tools/esp-rom-elfs/20241011/"
-        - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin"
-        - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/esp32ulp-elf/bin"
-        - "/home/luan/.espressif/tools/ninja/1.12.1/"
-        - "/home/luan/.espressif/tools/openocd-esp32/v0.12.0-esp32-20260304/openocd-esp32/bin"
-        - "/home/luan/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin"
-        - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/bin"
-        - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/riscv32-esp-elf/bin"
-        - "/home/luan/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin"
-        - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin"
-        - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/bin"
-        - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin"
         - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump"
         - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table"
         - "/home/luan/.espressif/v5.4.4/esp-idf/tools"
@@ -688,7 +598,9 @@ events:
       - "strip"
     candidate_directories:
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/"
-      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/"
       - "/home/luan/.espressif/tools/esp-clang/esp-18.1.2_20240912/esp-clang/bin/"
       - "/home/luan/.espressif/tools/esp-rom-elfs/20241011/"
       - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/"
@@ -700,9 +612,7 @@ events:
       - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/riscv32-esp-elf/bin/"
       - "/home/luan/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/"
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/bin/"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/"
+      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/"
       - "/home/luan/.local/bin/"
       - "/home/luan/bin/"
       - "/usr/lib64/ccache/"
@@ -712,20 +622,6 @@ events:
     found: "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/xtensa-esp32-elf-strip"
     search_context:
       ENV{PATH}:
-        - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin"
-        - "/home/luan/.espressif/tools/esp-clang/esp-18.1.2_20240912/esp-clang/bin"
-        - "/home/luan/.espressif/tools/esp-rom-elfs/20241011/"
-        - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin"
-        - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/esp32ulp-elf/bin"
-        - "/home/luan/.espressif/tools/ninja/1.12.1/"
-        - "/home/luan/.espressif/tools/openocd-esp32/v0.12.0-esp32-20260304/openocd-esp32/bin"
-        - "/home/luan/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin"
-        - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/bin"
-        - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/riscv32-esp-elf/bin"
-        - "/home/luan/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin"
-        - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin"
-        - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/bin"
-        - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin"
         - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump"
         - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table"
         - "/home/luan/.espressif/v5.4.4/esp-idf/tools"
@@ -771,7 +667,9 @@ events:
       - "ld"
     candidate_directories:
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/"
-      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/"
       - "/home/luan/.espressif/tools/esp-clang/esp-18.1.2_20240912/esp-clang/bin/"
       - "/home/luan/.espressif/tools/esp-rom-elfs/20241011/"
       - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/"
@@ -783,9 +681,7 @@ events:
       - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/riscv32-esp-elf/bin/"
       - "/home/luan/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/"
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/bin/"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/"
+      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/"
       - "/home/luan/.local/bin/"
       - "/home/luan/bin/"
       - "/usr/lib64/ccache/"
@@ -795,20 +691,6 @@ events:
     found: "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/xtensa-esp32-elf-ld"
     search_context:
       ENV{PATH}:
-        - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin"
-        - "/home/luan/.espressif/tools/esp-clang/esp-18.1.2_20240912/esp-clang/bin"
-        - "/home/luan/.espressif/tools/esp-rom-elfs/20241011/"
-        - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin"
-        - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/esp32ulp-elf/bin"
-        - "/home/luan/.espressif/tools/ninja/1.12.1/"
-        - "/home/luan/.espressif/tools/openocd-esp32/v0.12.0-esp32-20260304/openocd-esp32/bin"
-        - "/home/luan/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin"
-        - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/bin"
-        - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/riscv32-esp-elf/bin"
-        - "/home/luan/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin"
-        - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin"
-        - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/bin"
-        - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin"
         - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump"
         - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table"
         - "/home/luan/.espressif/v5.4.4/esp-idf/tools"
@@ -854,7 +736,9 @@ events:
       - "nm"
     candidate_directories:
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/"
-      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/"
       - "/home/luan/.espressif/tools/esp-clang/esp-18.1.2_20240912/esp-clang/bin/"
       - "/home/luan/.espressif/tools/esp-rom-elfs/20241011/"
       - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/"
@@ -866,9 +750,7 @@ events:
       - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/riscv32-esp-elf/bin/"
       - "/home/luan/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/"
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/bin/"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/"
+      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/"
       - "/home/luan/.local/bin/"
       - "/home/luan/bin/"
       - "/usr/lib64/ccache/"
@@ -878,20 +760,6 @@ events:
     found: "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/xtensa-esp32-elf-nm"
     search_context:
       ENV{PATH}:
-        - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin"
-        - "/home/luan/.espressif/tools/esp-clang/esp-18.1.2_20240912/esp-clang/bin"
-        - "/home/luan/.espressif/tools/esp-rom-elfs/20241011/"
-        - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin"
-        - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/esp32ulp-elf/bin"
-        - "/home/luan/.espressif/tools/ninja/1.12.1/"
-        - "/home/luan/.espressif/tools/openocd-esp32/v0.12.0-esp32-20260304/openocd-esp32/bin"
-        - "/home/luan/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin"
-        - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/bin"
-        - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/riscv32-esp-elf/bin"
-        - "/home/luan/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin"
-        - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin"
-        - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/bin"
-        - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin"
         - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump"
         - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table"
         - "/home/luan/.espressif/v5.4.4/esp-idf/tools"
@@ -937,7 +805,9 @@ events:
       - "objdump"
     candidate_directories:
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/"
-      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/"
       - "/home/luan/.espressif/tools/esp-clang/esp-18.1.2_20240912/esp-clang/bin/"
       - "/home/luan/.espressif/tools/esp-rom-elfs/20241011/"
       - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/"
@@ -949,9 +819,7 @@ events:
       - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/riscv32-esp-elf/bin/"
       - "/home/luan/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/"
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/bin/"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/"
+      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/"
       - "/home/luan/.local/bin/"
       - "/home/luan/bin/"
       - "/usr/lib64/ccache/"
@@ -961,20 +829,6 @@ events:
     found: "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/xtensa-esp32-elf-objdump"
     search_context:
       ENV{PATH}:
-        - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin"
-        - "/home/luan/.espressif/tools/esp-clang/esp-18.1.2_20240912/esp-clang/bin"
-        - "/home/luan/.espressif/tools/esp-rom-elfs/20241011/"
-        - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin"
-        - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/esp32ulp-elf/bin"
-        - "/home/luan/.espressif/tools/ninja/1.12.1/"
-        - "/home/luan/.espressif/tools/openocd-esp32/v0.12.0-esp32-20260304/openocd-esp32/bin"
-        - "/home/luan/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin"
-        - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/bin"
-        - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/riscv32-esp-elf/bin"
-        - "/home/luan/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin"
-        - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin"
-        - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/bin"
-        - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin"
         - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump"
         - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table"
         - "/home/luan/.espressif/v5.4.4/esp-idf/tools"
@@ -1020,7 +874,9 @@ events:
       - "objcopy"
     candidate_directories:
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/"
-      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/"
       - "/home/luan/.espressif/tools/esp-clang/esp-18.1.2_20240912/esp-clang/bin/"
       - "/home/luan/.espressif/tools/esp-rom-elfs/20241011/"
       - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/"
@@ -1032,9 +888,7 @@ events:
       - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/riscv32-esp-elf/bin/"
       - "/home/luan/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/"
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/bin/"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/"
+      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/"
       - "/home/luan/.local/bin/"
       - "/home/luan/bin/"
       - "/usr/lib64/ccache/"
@@ -1044,20 +898,6 @@ events:
     found: "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/xtensa-esp32-elf-objcopy"
     search_context:
       ENV{PATH}:
-        - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin"
-        - "/home/luan/.espressif/tools/esp-clang/esp-18.1.2_20240912/esp-clang/bin"
-        - "/home/luan/.espressif/tools/esp-rom-elfs/20241011/"
-        - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin"
-        - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/esp32ulp-elf/bin"
-        - "/home/luan/.espressif/tools/ninja/1.12.1/"
-        - "/home/luan/.espressif/tools/openocd-esp32/v0.12.0-esp32-20260304/openocd-esp32/bin"
-        - "/home/luan/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin"
-        - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/bin"
-        - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/riscv32-esp-elf/bin"
-        - "/home/luan/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin"
-        - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin"
-        - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/bin"
-        - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin"
         - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump"
         - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table"
         - "/home/luan/.espressif/v5.4.4/esp-idf/tools"
@@ -1103,7 +943,9 @@ events:
       - "readelf"
     candidate_directories:
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/"
-      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/"
       - "/home/luan/.espressif/tools/esp-clang/esp-18.1.2_20240912/esp-clang/bin/"
       - "/home/luan/.espressif/tools/esp-rom-elfs/20241011/"
       - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/"
@@ -1115,9 +957,7 @@ events:
       - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/riscv32-esp-elf/bin/"
       - "/home/luan/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/"
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/bin/"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/"
+      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/"
       - "/home/luan/.local/bin/"
       - "/home/luan/bin/"
       - "/usr/lib64/ccache/"
@@ -1127,20 +967,6 @@ events:
     found: "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/xtensa-esp32-elf-readelf"
     search_context:
       ENV{PATH}:
-        - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin"
-        - "/home/luan/.espressif/tools/esp-clang/esp-18.1.2_20240912/esp-clang/bin"
-        - "/home/luan/.espressif/tools/esp-rom-elfs/20241011/"
-        - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin"
-        - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/esp32ulp-elf/bin"
-        - "/home/luan/.espressif/tools/ninja/1.12.1/"
-        - "/home/luan/.espressif/tools/openocd-esp32/v0.12.0-esp32-20260304/openocd-esp32/bin"
-        - "/home/luan/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin"
-        - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/bin"
-        - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/riscv32-esp-elf/bin"
-        - "/home/luan/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin"
-        - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin"
-        - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/bin"
-        - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin"
         - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump"
         - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table"
         - "/home/luan/.espressif/v5.4.4/esp-idf/tools"
@@ -1186,7 +1012,9 @@ events:
       - "dlltool"
     candidate_directories:
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/"
-      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/"
       - "/home/luan/.espressif/tools/esp-clang/esp-18.1.2_20240912/esp-clang/bin/"
       - "/home/luan/.espressif/tools/esp-rom-elfs/20241011/"
       - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/"
@@ -1198,9 +1026,7 @@ events:
       - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/riscv32-esp-elf/bin/"
       - "/home/luan/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/"
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/bin/"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/"
+      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/"
       - "/home/luan/.local/bin/"
       - "/home/luan/bin/"
       - "/usr/lib64/ccache/"
@@ -1209,7 +1035,9 @@ events:
       - "/bin/"
     searched_directories:
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/xtensa-esp32-elf-dlltool"
-      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/xtensa-esp32-elf-dlltool"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/xtensa-esp32-elf-dlltool"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/xtensa-esp32-elf-dlltool"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/xtensa-esp32-elf-dlltool"
       - "/home/luan/.espressif/tools/esp-clang/esp-18.1.2_20240912/esp-clang/bin/xtensa-esp32-elf-dlltool"
       - "/home/luan/.espressif/tools/esp-rom-elfs/20241011/xtensa-esp32-elf-dlltool"
       - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/xtensa-esp32-elf-dlltool"
@@ -1221,9 +1049,7 @@ events:
       - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/riscv32-esp-elf/bin/xtensa-esp32-elf-dlltool"
       - "/home/luan/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/xtensa-esp32-elf-dlltool"
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/bin/xtensa-esp32-elf-dlltool"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/xtensa-esp32-elf-dlltool"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/xtensa-esp32-elf-dlltool"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/xtensa-esp32-elf-dlltool"
+      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/xtensa-esp32-elf-dlltool"
       - "/home/luan/.local/bin/xtensa-esp32-elf-dlltool"
       - "/home/luan/bin/xtensa-esp32-elf-dlltool"
       - "/usr/lib64/ccache/xtensa-esp32-elf-dlltool"
@@ -1231,7 +1057,9 @@ events:
       - "/usr/bin/xtensa-esp32-elf-dlltool"
       - "/bin/xtensa-esp32-elf-dlltool"
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/dlltool"
-      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/dlltool"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/dlltool"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/dlltool"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/dlltool"
       - "/home/luan/.espressif/tools/esp-clang/esp-18.1.2_20240912/esp-clang/bin/dlltool"
       - "/home/luan/.espressif/tools/esp-rom-elfs/20241011/dlltool"
       - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/dlltool"
@@ -1243,9 +1071,7 @@ events:
       - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/riscv32-esp-elf/bin/dlltool"
       - "/home/luan/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/dlltool"
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/bin/dlltool"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/dlltool"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/dlltool"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/dlltool"
+      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/dlltool"
       - "/home/luan/.local/bin/dlltool"
       - "/home/luan/bin/dlltool"
       - "/usr/lib64/ccache/dlltool"
@@ -1255,20 +1081,6 @@ events:
     found: false
     search_context:
       ENV{PATH}:
-        - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin"
-        - "/home/luan/.espressif/tools/esp-clang/esp-18.1.2_20240912/esp-clang/bin"
-        - "/home/luan/.espressif/tools/esp-rom-elfs/20241011/"
-        - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin"
-        - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/esp32ulp-elf/bin"
-        - "/home/luan/.espressif/tools/ninja/1.12.1/"
-        - "/home/luan/.espressif/tools/openocd-esp32/v0.12.0-esp32-20260304/openocd-esp32/bin"
-        - "/home/luan/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin"
-        - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/bin"
-        - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/riscv32-esp-elf/bin"
-        - "/home/luan/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin"
-        - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin"
-        - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/bin"
-        - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin"
         - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump"
         - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table"
         - "/home/luan/.espressif/v5.4.4/esp-idf/tools"
@@ -1314,7 +1126,9 @@ events:
       - "addr2line"
     candidate_directories:
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/"
-      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/"
       - "/home/luan/.espressif/tools/esp-clang/esp-18.1.2_20240912/esp-clang/bin/"
       - "/home/luan/.espressif/tools/esp-rom-elfs/20241011/"
       - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/"
@@ -1326,9 +1140,7 @@ events:
       - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/riscv32-esp-elf/bin/"
       - "/home/luan/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/"
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/bin/"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/"
+      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/"
       - "/home/luan/.local/bin/"
       - "/home/luan/bin/"
       - "/usr/lib64/ccache/"
@@ -1338,20 +1150,6 @@ events:
     found: "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/xtensa-esp32-elf-addr2line"
     search_context:
       ENV{PATH}:
-        - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin"
-        - "/home/luan/.espressif/tools/esp-clang/esp-18.1.2_20240912/esp-clang/bin"
-        - "/home/luan/.espressif/tools/esp-rom-elfs/20241011/"
-        - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin"
-        - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/esp32ulp-elf/bin"
-        - "/home/luan/.espressif/tools/ninja/1.12.1/"
-        - "/home/luan/.espressif/tools/openocd-esp32/v0.12.0-esp32-20260304/openocd-esp32/bin"
-        - "/home/luan/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin"
-        - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/bin"
-        - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/riscv32-esp-elf/bin"
-        - "/home/luan/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin"
-        - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin"
-        - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/bin"
-        - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin"
         - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump"
         - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table"
         - "/home/luan/.espressif/v5.4.4/esp-idf/tools"
@@ -1397,7 +1195,9 @@ events:
       - "tapi"
     candidate_directories:
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/"
-      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/"
       - "/home/luan/.espressif/tools/esp-clang/esp-18.1.2_20240912/esp-clang/bin/"
       - "/home/luan/.espressif/tools/esp-rom-elfs/20241011/"
       - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/"
@@ -1409,9 +1209,7 @@ events:
       - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/riscv32-esp-elf/bin/"
       - "/home/luan/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/"
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/bin/"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/"
+      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/"
       - "/home/luan/.local/bin/"
       - "/home/luan/bin/"
       - "/usr/lib64/ccache/"
@@ -1420,7 +1218,9 @@ events:
       - "/bin/"
     searched_directories:
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/xtensa-esp32-elf-tapi"
-      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/xtensa-esp32-elf-tapi"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/xtensa-esp32-elf-tapi"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/xtensa-esp32-elf-tapi"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/xtensa-esp32-elf-tapi"
       - "/home/luan/.espressif/tools/esp-clang/esp-18.1.2_20240912/esp-clang/bin/xtensa-esp32-elf-tapi"
       - "/home/luan/.espressif/tools/esp-rom-elfs/20241011/xtensa-esp32-elf-tapi"
       - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/xtensa-esp32-elf-tapi"
@@ -1432,9 +1232,7 @@ events:
       - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/riscv32-esp-elf/bin/xtensa-esp32-elf-tapi"
       - "/home/luan/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/xtensa-esp32-elf-tapi"
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/bin/xtensa-esp32-elf-tapi"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/xtensa-esp32-elf-tapi"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/xtensa-esp32-elf-tapi"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/xtensa-esp32-elf-tapi"
+      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/xtensa-esp32-elf-tapi"
       - "/home/luan/.local/bin/xtensa-esp32-elf-tapi"
       - "/home/luan/bin/xtensa-esp32-elf-tapi"
       - "/usr/lib64/ccache/xtensa-esp32-elf-tapi"
@@ -1442,7 +1240,9 @@ events:
       - "/usr/bin/xtensa-esp32-elf-tapi"
       - "/bin/xtensa-esp32-elf-tapi"
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/tapi"
-      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/tapi"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/tapi"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/tapi"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/tapi"
       - "/home/luan/.espressif/tools/esp-clang/esp-18.1.2_20240912/esp-clang/bin/tapi"
       - "/home/luan/.espressif/tools/esp-rom-elfs/20241011/tapi"
       - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/tapi"
@@ -1454,9 +1254,7 @@ events:
       - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/riscv32-esp-elf/bin/tapi"
       - "/home/luan/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/tapi"
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/bin/tapi"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/tapi"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/tapi"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/tapi"
+      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/tapi"
       - "/home/luan/.local/bin/tapi"
       - "/home/luan/bin/tapi"
       - "/usr/lib64/ccache/tapi"
@@ -1466,20 +1264,6 @@ events:
     found: false
     search_context:
       ENV{PATH}:
-        - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin"
-        - "/home/luan/.espressif/tools/esp-clang/esp-18.1.2_20240912/esp-clang/bin"
-        - "/home/luan/.espressif/tools/esp-rom-elfs/20241011/"
-        - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin"
-        - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/esp32ulp-elf/bin"
-        - "/home/luan/.espressif/tools/ninja/1.12.1/"
-        - "/home/luan/.espressif/tools/openocd-esp32/v0.12.0-esp32-20260304/openocd-esp32/bin"
-        - "/home/luan/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin"
-        - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/bin"
-        - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/riscv32-esp-elf/bin"
-        - "/home/luan/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin"
-        - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin"
-        - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/bin"
-        - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin"
         - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump"
         - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table"
         - "/home/luan/.espressif/v5.4.4/esp-idf/tools"
@@ -1527,7 +1311,9 @@ events:
       - "xtensa-esp32-elf-gcc-ar"
     candidate_directories:
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/"
-      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/"
       - "/home/luan/.espressif/tools/esp-clang/esp-18.1.2_20240912/esp-clang/bin/"
       - "/home/luan/.espressif/tools/esp-rom-elfs/20241011/"
       - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/"
@@ -1539,9 +1325,7 @@ events:
       - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/riscv32-esp-elf/bin/"
       - "/home/luan/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/"
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/bin/"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/"
+      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/"
       - "/home/luan/.local/bin/"
       - "/home/luan/bin/"
       - "/usr/lib64/ccache/"
@@ -1550,7 +1334,9 @@ events:
       - "/bin/"
     searched_directories:
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc-ar-14.2"
-      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/xtensa-esp32-elf-gcc-ar-14.2"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/xtensa-esp32-elf-gcc-ar-14.2"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/xtensa-esp32-elf-gcc-ar-14.2"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/xtensa-esp32-elf-gcc-ar-14.2"
       - "/home/luan/.espressif/tools/esp-clang/esp-18.1.2_20240912/esp-clang/bin/xtensa-esp32-elf-gcc-ar-14.2"
       - "/home/luan/.espressif/tools/esp-rom-elfs/20241011/xtensa-esp32-elf-gcc-ar-14.2"
       - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/xtensa-esp32-elf-gcc-ar-14.2"
@@ -1562,9 +1348,7 @@ events:
       - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/riscv32-esp-elf/bin/xtensa-esp32-elf-gcc-ar-14.2"
       - "/home/luan/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/xtensa-esp32-elf-gcc-ar-14.2"
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc-ar-14.2"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/xtensa-esp32-elf-gcc-ar-14.2"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/xtensa-esp32-elf-gcc-ar-14.2"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/xtensa-esp32-elf-gcc-ar-14.2"
+      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/xtensa-esp32-elf-gcc-ar-14.2"
       - "/home/luan/.local/bin/xtensa-esp32-elf-gcc-ar-14.2"
       - "/home/luan/bin/xtensa-esp32-elf-gcc-ar-14.2"
       - "/usr/lib64/ccache/xtensa-esp32-elf-gcc-ar-14.2"
@@ -1572,7 +1356,9 @@ events:
       - "/usr/bin/xtensa-esp32-elf-gcc-ar-14.2"
       - "/bin/xtensa-esp32-elf-gcc-ar-14.2"
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc-ar-14"
-      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/xtensa-esp32-elf-gcc-ar-14"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/xtensa-esp32-elf-gcc-ar-14"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/xtensa-esp32-elf-gcc-ar-14"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/xtensa-esp32-elf-gcc-ar-14"
       - "/home/luan/.espressif/tools/esp-clang/esp-18.1.2_20240912/esp-clang/bin/xtensa-esp32-elf-gcc-ar-14"
       - "/home/luan/.espressif/tools/esp-rom-elfs/20241011/xtensa-esp32-elf-gcc-ar-14"
       - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/xtensa-esp32-elf-gcc-ar-14"
@@ -1584,9 +1370,7 @@ events:
       - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/riscv32-esp-elf/bin/xtensa-esp32-elf-gcc-ar-14"
       - "/home/luan/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/xtensa-esp32-elf-gcc-ar-14"
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc-ar-14"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/xtensa-esp32-elf-gcc-ar-14"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/xtensa-esp32-elf-gcc-ar-14"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/xtensa-esp32-elf-gcc-ar-14"
+      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/xtensa-esp32-elf-gcc-ar-14"
       - "/home/luan/.local/bin/xtensa-esp32-elf-gcc-ar-14"
       - "/home/luan/bin/xtensa-esp32-elf-gcc-ar-14"
       - "/usr/lib64/ccache/xtensa-esp32-elf-gcc-ar-14"
@@ -1594,7 +1378,9 @@ events:
       - "/usr/bin/xtensa-esp32-elf-gcc-ar-14"
       - "/bin/xtensa-esp32-elf-gcc-ar-14"
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc-ar14"
-      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/xtensa-esp32-elf-gcc-ar14"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/xtensa-esp32-elf-gcc-ar14"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/xtensa-esp32-elf-gcc-ar14"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/xtensa-esp32-elf-gcc-ar14"
       - "/home/luan/.espressif/tools/esp-clang/esp-18.1.2_20240912/esp-clang/bin/xtensa-esp32-elf-gcc-ar14"
       - "/home/luan/.espressif/tools/esp-rom-elfs/20241011/xtensa-esp32-elf-gcc-ar14"
       - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/xtensa-esp32-elf-gcc-ar14"
@@ -1606,9 +1392,7 @@ events:
       - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/riscv32-esp-elf/bin/xtensa-esp32-elf-gcc-ar14"
       - "/home/luan/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/xtensa-esp32-elf-gcc-ar14"
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc-ar14"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/xtensa-esp32-elf-gcc-ar14"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/xtensa-esp32-elf-gcc-ar14"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/xtensa-esp32-elf-gcc-ar14"
+      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/xtensa-esp32-elf-gcc-ar14"
       - "/home/luan/.local/bin/xtensa-esp32-elf-gcc-ar14"
       - "/home/luan/bin/xtensa-esp32-elf-gcc-ar14"
       - "/usr/lib64/ccache/xtensa-esp32-elf-gcc-ar14"
@@ -1618,20 +1402,6 @@ events:
     found: "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc-ar"
     search_context:
       ENV{PATH}:
-        - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin"
-        - "/home/luan/.espressif/tools/esp-clang/esp-18.1.2_20240912/esp-clang/bin"
-        - "/home/luan/.espressif/tools/esp-rom-elfs/20241011/"
-        - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin"
-        - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/esp32ulp-elf/bin"
-        - "/home/luan/.espressif/tools/ninja/1.12.1/"
-        - "/home/luan/.espressif/tools/openocd-esp32/v0.12.0-esp32-20260304/openocd-esp32/bin"
-        - "/home/luan/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin"
-        - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/bin"
-        - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/riscv32-esp-elf/bin"
-        - "/home/luan/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin"
-        - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin"
-        - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/bin"
-        - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin"
         - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump"
         - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table"
         - "/home/luan/.espressif/v5.4.4/esp-idf/tools"
@@ -1679,7 +1449,9 @@ events:
       - "xtensa-esp32-elf-gcc-ranlib"
     candidate_directories:
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/"
-      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/"
       - "/home/luan/.espressif/tools/esp-clang/esp-18.1.2_20240912/esp-clang/bin/"
       - "/home/luan/.espressif/tools/esp-rom-elfs/20241011/"
       - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/"
@@ -1691,9 +1463,7 @@ events:
       - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/riscv32-esp-elf/bin/"
       - "/home/luan/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/"
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/bin/"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/"
+      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/"
       - "/home/luan/.local/bin/"
       - "/home/luan/bin/"
       - "/usr/lib64/ccache/"
@@ -1702,7 +1472,9 @@ events:
       - "/bin/"
     searched_directories:
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc-ranlib-14.2"
-      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/xtensa-esp32-elf-gcc-ranlib-14.2"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/xtensa-esp32-elf-gcc-ranlib-14.2"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/xtensa-esp32-elf-gcc-ranlib-14.2"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/xtensa-esp32-elf-gcc-ranlib-14.2"
       - "/home/luan/.espressif/tools/esp-clang/esp-18.1.2_20240912/esp-clang/bin/xtensa-esp32-elf-gcc-ranlib-14.2"
       - "/home/luan/.espressif/tools/esp-rom-elfs/20241011/xtensa-esp32-elf-gcc-ranlib-14.2"
       - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/xtensa-esp32-elf-gcc-ranlib-14.2"
@@ -1714,9 +1486,7 @@ events:
       - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/riscv32-esp-elf/bin/xtensa-esp32-elf-gcc-ranlib-14.2"
       - "/home/luan/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/xtensa-esp32-elf-gcc-ranlib-14.2"
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc-ranlib-14.2"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/xtensa-esp32-elf-gcc-ranlib-14.2"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/xtensa-esp32-elf-gcc-ranlib-14.2"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/xtensa-esp32-elf-gcc-ranlib-14.2"
+      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/xtensa-esp32-elf-gcc-ranlib-14.2"
       - "/home/luan/.local/bin/xtensa-esp32-elf-gcc-ranlib-14.2"
       - "/home/luan/bin/xtensa-esp32-elf-gcc-ranlib-14.2"
       - "/usr/lib64/ccache/xtensa-esp32-elf-gcc-ranlib-14.2"
@@ -1724,7 +1494,9 @@ events:
       - "/usr/bin/xtensa-esp32-elf-gcc-ranlib-14.2"
       - "/bin/xtensa-esp32-elf-gcc-ranlib-14.2"
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc-ranlib-14"
-      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/xtensa-esp32-elf-gcc-ranlib-14"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/xtensa-esp32-elf-gcc-ranlib-14"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/xtensa-esp32-elf-gcc-ranlib-14"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/xtensa-esp32-elf-gcc-ranlib-14"
       - "/home/luan/.espressif/tools/esp-clang/esp-18.1.2_20240912/esp-clang/bin/xtensa-esp32-elf-gcc-ranlib-14"
       - "/home/luan/.espressif/tools/esp-rom-elfs/20241011/xtensa-esp32-elf-gcc-ranlib-14"
       - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/xtensa-esp32-elf-gcc-ranlib-14"
@@ -1736,9 +1508,7 @@ events:
       - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/riscv32-esp-elf/bin/xtensa-esp32-elf-gcc-ranlib-14"
       - "/home/luan/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/xtensa-esp32-elf-gcc-ranlib-14"
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc-ranlib-14"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/xtensa-esp32-elf-gcc-ranlib-14"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/xtensa-esp32-elf-gcc-ranlib-14"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/xtensa-esp32-elf-gcc-ranlib-14"
+      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/xtensa-esp32-elf-gcc-ranlib-14"
       - "/home/luan/.local/bin/xtensa-esp32-elf-gcc-ranlib-14"
       - "/home/luan/bin/xtensa-esp32-elf-gcc-ranlib-14"
       - "/usr/lib64/ccache/xtensa-esp32-elf-gcc-ranlib-14"
@@ -1746,7 +1516,9 @@ events:
       - "/usr/bin/xtensa-esp32-elf-gcc-ranlib-14"
       - "/bin/xtensa-esp32-elf-gcc-ranlib-14"
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc-ranlib14"
-      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/xtensa-esp32-elf-gcc-ranlib14"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/xtensa-esp32-elf-gcc-ranlib14"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/xtensa-esp32-elf-gcc-ranlib14"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/xtensa-esp32-elf-gcc-ranlib14"
       - "/home/luan/.espressif/tools/esp-clang/esp-18.1.2_20240912/esp-clang/bin/xtensa-esp32-elf-gcc-ranlib14"
       - "/home/luan/.espressif/tools/esp-rom-elfs/20241011/xtensa-esp32-elf-gcc-ranlib14"
       - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/xtensa-esp32-elf-gcc-ranlib14"
@@ -1758,9 +1530,7 @@ events:
       - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/riscv32-esp-elf/bin/xtensa-esp32-elf-gcc-ranlib14"
       - "/home/luan/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/xtensa-esp32-elf-gcc-ranlib14"
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc-ranlib14"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/xtensa-esp32-elf-gcc-ranlib14"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/xtensa-esp32-elf-gcc-ranlib14"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/xtensa-esp32-elf-gcc-ranlib14"
+      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/xtensa-esp32-elf-gcc-ranlib14"
       - "/home/luan/.local/bin/xtensa-esp32-elf-gcc-ranlib14"
       - "/home/luan/bin/xtensa-esp32-elf-gcc-ranlib14"
       - "/usr/lib64/ccache/xtensa-esp32-elf-gcc-ranlib14"
@@ -1770,20 +1540,6 @@ events:
     found: "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc-ranlib"
     search_context:
       ENV{PATH}:
-        - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin"
-        - "/home/luan/.espressif/tools/esp-clang/esp-18.1.2_20240912/esp-clang/bin"
-        - "/home/luan/.espressif/tools/esp-rom-elfs/20241011/"
-        - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin"
-        - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/esp32ulp-elf/bin"
-        - "/home/luan/.espressif/tools/ninja/1.12.1/"
-        - "/home/luan/.espressif/tools/openocd-esp32/v0.12.0-esp32-20260304/openocd-esp32/bin"
-        - "/home/luan/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin"
-        - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/bin"
-        - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/riscv32-esp-elf/bin"
-        - "/home/luan/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin"
-        - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin"
-        - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/bin"
-        - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin"
         - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump"
         - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table"
         - "/home/luan/.espressif/v5.4.4/esp-idf/tools"
@@ -1827,7 +1583,9 @@ events:
     names:
       - "xtensa-esp32-elf-g++"
     candidate_directories:
-      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/"
       - "/home/luan/.espressif/tools/esp-clang/esp-18.1.2_20240912/esp-clang/bin/"
       - "/home/luan/.espressif/tools/esp-rom-elfs/20241011/"
       - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/"
@@ -1840,9 +1598,7 @@ events:
       - "/home/luan/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/"
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/"
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/bin/"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/"
+      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/"
       - "/home/luan/.local/bin/"
       - "/home/luan/bin/"
       - "/usr/lib64/ccache/"
@@ -1850,7 +1606,9 @@ events:
       - "/usr/bin/"
       - "/bin/"
     searched_directories:
-      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/xtensa-esp32-elf-g++"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/xtensa-esp32-elf-g++"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/xtensa-esp32-elf-g++"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/xtensa-esp32-elf-g++"
       - "/home/luan/.espressif/tools/esp-clang/esp-18.1.2_20240912/esp-clang/bin/xtensa-esp32-elf-g++"
       - "/home/luan/.espressif/tools/esp-rom-elfs/20241011/xtensa-esp32-elf-g++"
       - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/xtensa-esp32-elf-g++"
@@ -1864,20 +1622,6 @@ events:
     found: "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/xtensa-esp32-elf-g++"
     search_context:
       ENV{PATH}:
-        - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin"
-        - "/home/luan/.espressif/tools/esp-clang/esp-18.1.2_20240912/esp-clang/bin"
-        - "/home/luan/.espressif/tools/esp-rom-elfs/20241011/"
-        - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin"
-        - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/esp32ulp-elf/bin"
-        - "/home/luan/.espressif/tools/ninja/1.12.1/"
-        - "/home/luan/.espressif/tools/openocd-esp32/v0.12.0-esp32-20260304/openocd-esp32/bin"
-        - "/home/luan/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin"
-        - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/bin"
-        - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/riscv32-esp-elf/bin"
-        - "/home/luan/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin"
-        - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin"
-        - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/bin"
-        - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin"
         - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump"
         - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table"
         - "/home/luan/.espressif/v5.4.4/esp-idf/tools"
@@ -1930,20 +1674,6 @@ events:
     found: "/usr/share/cmake/Modules/CMakeCXXCompilerId.cpp.in"
     search_context:
       ENV{PATH}:
-        - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin"
-        - "/home/luan/.espressif/tools/esp-clang/esp-18.1.2_20240912/esp-clang/bin"
-        - "/home/luan/.espressif/tools/esp-rom-elfs/20241011/"
-        - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin"
-        - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/esp32ulp-elf/bin"
-        - "/home/luan/.espressif/tools/ninja/1.12.1/"
-        - "/home/luan/.espressif/tools/openocd-esp32/v0.12.0-esp32-20260304/openocd-esp32/bin"
-        - "/home/luan/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin"
-        - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/bin"
-        - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/riscv32-esp-elf/bin"
-        - "/home/luan/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin"
-        - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin"
-        - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/bin"
-        - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin"
         - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump"
         - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table"
         - "/home/luan/.espressif/v5.4.4/esp-idf/tools"
@@ -1987,7 +1717,7 @@ events:
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
       
       The CXX compiler identification is GNU, found in:
-        /home/luan/Documents/Espressif/Esp32_Project/build/bootloader/CMakeFiles/4.3.0/CompilerIdCXX/a.out
+        /home/luan/Documents/Custom Office Templates/gh/master_lcd/build/bootloader/CMakeFiles/4.3.0/CompilerIdCXX/a.out
       
   -
     kind: "find-v1"
@@ -2014,7 +1744,9 @@ events:
       - "xtensa-esp32-elf-gcc-ar"
     candidate_directories:
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/"
-      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/"
       - "/home/luan/.espressif/tools/esp-clang/esp-18.1.2_20240912/esp-clang/bin/"
       - "/home/luan/.espressif/tools/esp-rom-elfs/20241011/"
       - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/"
@@ -2026,9 +1758,7 @@ events:
       - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/riscv32-esp-elf/bin/"
       - "/home/luan/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/"
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/bin/"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/"
+      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/"
       - "/home/luan/.local/bin/"
       - "/home/luan/bin/"
       - "/usr/lib64/ccache/"
@@ -2037,7 +1767,9 @@ events:
       - "/bin/"
     searched_directories:
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc-ar-14.2"
-      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/xtensa-esp32-elf-gcc-ar-14.2"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/xtensa-esp32-elf-gcc-ar-14.2"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/xtensa-esp32-elf-gcc-ar-14.2"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/xtensa-esp32-elf-gcc-ar-14.2"
       - "/home/luan/.espressif/tools/esp-clang/esp-18.1.2_20240912/esp-clang/bin/xtensa-esp32-elf-gcc-ar-14.2"
       - "/home/luan/.espressif/tools/esp-rom-elfs/20241011/xtensa-esp32-elf-gcc-ar-14.2"
       - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/xtensa-esp32-elf-gcc-ar-14.2"
@@ -2049,9 +1781,7 @@ events:
       - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/riscv32-esp-elf/bin/xtensa-esp32-elf-gcc-ar-14.2"
       - "/home/luan/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/xtensa-esp32-elf-gcc-ar-14.2"
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc-ar-14.2"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/xtensa-esp32-elf-gcc-ar-14.2"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/xtensa-esp32-elf-gcc-ar-14.2"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/xtensa-esp32-elf-gcc-ar-14.2"
+      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/xtensa-esp32-elf-gcc-ar-14.2"
       - "/home/luan/.local/bin/xtensa-esp32-elf-gcc-ar-14.2"
       - "/home/luan/bin/xtensa-esp32-elf-gcc-ar-14.2"
       - "/usr/lib64/ccache/xtensa-esp32-elf-gcc-ar-14.2"
@@ -2059,7 +1789,9 @@ events:
       - "/usr/bin/xtensa-esp32-elf-gcc-ar-14.2"
       - "/bin/xtensa-esp32-elf-gcc-ar-14.2"
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc-ar-14"
-      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/xtensa-esp32-elf-gcc-ar-14"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/xtensa-esp32-elf-gcc-ar-14"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/xtensa-esp32-elf-gcc-ar-14"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/xtensa-esp32-elf-gcc-ar-14"
       - "/home/luan/.espressif/tools/esp-clang/esp-18.1.2_20240912/esp-clang/bin/xtensa-esp32-elf-gcc-ar-14"
       - "/home/luan/.espressif/tools/esp-rom-elfs/20241011/xtensa-esp32-elf-gcc-ar-14"
       - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/xtensa-esp32-elf-gcc-ar-14"
@@ -2071,9 +1803,7 @@ events:
       - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/riscv32-esp-elf/bin/xtensa-esp32-elf-gcc-ar-14"
       - "/home/luan/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/xtensa-esp32-elf-gcc-ar-14"
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc-ar-14"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/xtensa-esp32-elf-gcc-ar-14"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/xtensa-esp32-elf-gcc-ar-14"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/xtensa-esp32-elf-gcc-ar-14"
+      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/xtensa-esp32-elf-gcc-ar-14"
       - "/home/luan/.local/bin/xtensa-esp32-elf-gcc-ar-14"
       - "/home/luan/bin/xtensa-esp32-elf-gcc-ar-14"
       - "/usr/lib64/ccache/xtensa-esp32-elf-gcc-ar-14"
@@ -2081,7 +1811,9 @@ events:
       - "/usr/bin/xtensa-esp32-elf-gcc-ar-14"
       - "/bin/xtensa-esp32-elf-gcc-ar-14"
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc-ar14"
-      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/xtensa-esp32-elf-gcc-ar14"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/xtensa-esp32-elf-gcc-ar14"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/xtensa-esp32-elf-gcc-ar14"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/xtensa-esp32-elf-gcc-ar14"
       - "/home/luan/.espressif/tools/esp-clang/esp-18.1.2_20240912/esp-clang/bin/xtensa-esp32-elf-gcc-ar14"
       - "/home/luan/.espressif/tools/esp-rom-elfs/20241011/xtensa-esp32-elf-gcc-ar14"
       - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/xtensa-esp32-elf-gcc-ar14"
@@ -2093,9 +1825,7 @@ events:
       - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/riscv32-esp-elf/bin/xtensa-esp32-elf-gcc-ar14"
       - "/home/luan/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/xtensa-esp32-elf-gcc-ar14"
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc-ar14"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/xtensa-esp32-elf-gcc-ar14"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/xtensa-esp32-elf-gcc-ar14"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/xtensa-esp32-elf-gcc-ar14"
+      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/xtensa-esp32-elf-gcc-ar14"
       - "/home/luan/.local/bin/xtensa-esp32-elf-gcc-ar14"
       - "/home/luan/bin/xtensa-esp32-elf-gcc-ar14"
       - "/usr/lib64/ccache/xtensa-esp32-elf-gcc-ar14"
@@ -2105,20 +1835,6 @@ events:
     found: "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc-ar"
     search_context:
       ENV{PATH}:
-        - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin"
-        - "/home/luan/.espressif/tools/esp-clang/esp-18.1.2_20240912/esp-clang/bin"
-        - "/home/luan/.espressif/tools/esp-rom-elfs/20241011/"
-        - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin"
-        - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/esp32ulp-elf/bin"
-        - "/home/luan/.espressif/tools/ninja/1.12.1/"
-        - "/home/luan/.espressif/tools/openocd-esp32/v0.12.0-esp32-20260304/openocd-esp32/bin"
-        - "/home/luan/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin"
-        - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/bin"
-        - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/riscv32-esp-elf/bin"
-        - "/home/luan/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin"
-        - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin"
-        - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/bin"
-        - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin"
         - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump"
         - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table"
         - "/home/luan/.espressif/v5.4.4/esp-idf/tools"
@@ -2166,7 +1882,9 @@ events:
       - "xtensa-esp32-elf-gcc-ranlib"
     candidate_directories:
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/"
-      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/"
       - "/home/luan/.espressif/tools/esp-clang/esp-18.1.2_20240912/esp-clang/bin/"
       - "/home/luan/.espressif/tools/esp-rom-elfs/20241011/"
       - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/"
@@ -2178,9 +1896,7 @@ events:
       - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/riscv32-esp-elf/bin/"
       - "/home/luan/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/"
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/bin/"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/"
+      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/"
       - "/home/luan/.local/bin/"
       - "/home/luan/bin/"
       - "/usr/lib64/ccache/"
@@ -2189,7 +1905,9 @@ events:
       - "/bin/"
     searched_directories:
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc-ranlib-14.2"
-      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/xtensa-esp32-elf-gcc-ranlib-14.2"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/xtensa-esp32-elf-gcc-ranlib-14.2"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/xtensa-esp32-elf-gcc-ranlib-14.2"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/xtensa-esp32-elf-gcc-ranlib-14.2"
       - "/home/luan/.espressif/tools/esp-clang/esp-18.1.2_20240912/esp-clang/bin/xtensa-esp32-elf-gcc-ranlib-14.2"
       - "/home/luan/.espressif/tools/esp-rom-elfs/20241011/xtensa-esp32-elf-gcc-ranlib-14.2"
       - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/xtensa-esp32-elf-gcc-ranlib-14.2"
@@ -2201,9 +1919,7 @@ events:
       - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/riscv32-esp-elf/bin/xtensa-esp32-elf-gcc-ranlib-14.2"
       - "/home/luan/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/xtensa-esp32-elf-gcc-ranlib-14.2"
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc-ranlib-14.2"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/xtensa-esp32-elf-gcc-ranlib-14.2"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/xtensa-esp32-elf-gcc-ranlib-14.2"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/xtensa-esp32-elf-gcc-ranlib-14.2"
+      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/xtensa-esp32-elf-gcc-ranlib-14.2"
       - "/home/luan/.local/bin/xtensa-esp32-elf-gcc-ranlib-14.2"
       - "/home/luan/bin/xtensa-esp32-elf-gcc-ranlib-14.2"
       - "/usr/lib64/ccache/xtensa-esp32-elf-gcc-ranlib-14.2"
@@ -2211,7 +1927,9 @@ events:
       - "/usr/bin/xtensa-esp32-elf-gcc-ranlib-14.2"
       - "/bin/xtensa-esp32-elf-gcc-ranlib-14.2"
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc-ranlib-14"
-      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/xtensa-esp32-elf-gcc-ranlib-14"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/xtensa-esp32-elf-gcc-ranlib-14"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/xtensa-esp32-elf-gcc-ranlib-14"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/xtensa-esp32-elf-gcc-ranlib-14"
       - "/home/luan/.espressif/tools/esp-clang/esp-18.1.2_20240912/esp-clang/bin/xtensa-esp32-elf-gcc-ranlib-14"
       - "/home/luan/.espressif/tools/esp-rom-elfs/20241011/xtensa-esp32-elf-gcc-ranlib-14"
       - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/xtensa-esp32-elf-gcc-ranlib-14"
@@ -2223,9 +1941,7 @@ events:
       - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/riscv32-esp-elf/bin/xtensa-esp32-elf-gcc-ranlib-14"
       - "/home/luan/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/xtensa-esp32-elf-gcc-ranlib-14"
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc-ranlib-14"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/xtensa-esp32-elf-gcc-ranlib-14"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/xtensa-esp32-elf-gcc-ranlib-14"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/xtensa-esp32-elf-gcc-ranlib-14"
+      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/xtensa-esp32-elf-gcc-ranlib-14"
       - "/home/luan/.local/bin/xtensa-esp32-elf-gcc-ranlib-14"
       - "/home/luan/bin/xtensa-esp32-elf-gcc-ranlib-14"
       - "/usr/lib64/ccache/xtensa-esp32-elf-gcc-ranlib-14"
@@ -2233,7 +1949,9 @@ events:
       - "/usr/bin/xtensa-esp32-elf-gcc-ranlib-14"
       - "/bin/xtensa-esp32-elf-gcc-ranlib-14"
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc-ranlib14"
-      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/xtensa-esp32-elf-gcc-ranlib14"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/xtensa-esp32-elf-gcc-ranlib14"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/xtensa-esp32-elf-gcc-ranlib14"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/xtensa-esp32-elf-gcc-ranlib14"
       - "/home/luan/.espressif/tools/esp-clang/esp-18.1.2_20240912/esp-clang/bin/xtensa-esp32-elf-gcc-ranlib14"
       - "/home/luan/.espressif/tools/esp-rom-elfs/20241011/xtensa-esp32-elf-gcc-ranlib14"
       - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/xtensa-esp32-elf-gcc-ranlib14"
@@ -2245,9 +1963,7 @@ events:
       - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/riscv32-esp-elf/bin/xtensa-esp32-elf-gcc-ranlib14"
       - "/home/luan/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/xtensa-esp32-elf-gcc-ranlib14"
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc-ranlib14"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/xtensa-esp32-elf-gcc-ranlib14"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/xtensa-esp32-elf-gcc-ranlib14"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/xtensa-esp32-elf-gcc-ranlib14"
+      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/xtensa-esp32-elf-gcc-ranlib14"
       - "/home/luan/.local/bin/xtensa-esp32-elf-gcc-ranlib14"
       - "/home/luan/bin/xtensa-esp32-elf-gcc-ranlib14"
       - "/usr/lib64/ccache/xtensa-esp32-elf-gcc-ranlib14"
@@ -2257,20 +1973,6 @@ events:
     found: "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc-ranlib"
     search_context:
       ENV{PATH}:
-        - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin"
-        - "/home/luan/.espressif/tools/esp-clang/esp-18.1.2_20240912/esp-clang/bin"
-        - "/home/luan/.espressif/tools/esp-rom-elfs/20241011/"
-        - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin"
-        - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/esp32ulp-elf/bin"
-        - "/home/luan/.espressif/tools/ninja/1.12.1/"
-        - "/home/luan/.espressif/tools/openocd-esp32/v0.12.0-esp32-20260304/openocd-esp32/bin"
-        - "/home/luan/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin"
-        - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/bin"
-        - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/riscv32-esp-elf/bin"
-        - "/home/luan/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin"
-        - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin"
-        - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/bin"
-        - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin"
         - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump"
         - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table"
         - "/home/luan/.espressif/v5.4.4/esp-idf/tools"
@@ -2314,7 +2016,9 @@ events:
     names:
       - "xtensa-esp32-elf-gcc"
     candidate_directories:
-      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/"
       - "/home/luan/.espressif/tools/esp-clang/esp-18.1.2_20240912/esp-clang/bin/"
       - "/home/luan/.espressif/tools/esp-rom-elfs/20241011/"
       - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/"
@@ -2327,9 +2031,7 @@ events:
       - "/home/luan/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/"
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/"
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/bin/"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/"
+      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/"
       - "/home/luan/.local/bin/"
       - "/home/luan/bin/"
       - "/usr/lib64/ccache/"
@@ -2337,7 +2039,9 @@ events:
       - "/usr/bin/"
       - "/bin/"
     searched_directories:
-      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/xtensa-esp32-elf-gcc"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/xtensa-esp32-elf-gcc"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/xtensa-esp32-elf-gcc"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/xtensa-esp32-elf-gcc"
       - "/home/luan/.espressif/tools/esp-clang/esp-18.1.2_20240912/esp-clang/bin/xtensa-esp32-elf-gcc"
       - "/home/luan/.espressif/tools/esp-rom-elfs/20241011/xtensa-esp32-elf-gcc"
       - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/xtensa-esp32-elf-gcc"
@@ -2351,20 +2055,6 @@ events:
     found: "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc"
     search_context:
       ENV{PATH}:
-        - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin"
-        - "/home/luan/.espressif/tools/esp-clang/esp-18.1.2_20240912/esp-clang/bin"
-        - "/home/luan/.espressif/tools/esp-rom-elfs/20241011/"
-        - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin"
-        - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/esp32ulp-elf/bin"
-        - "/home/luan/.espressif/tools/ninja/1.12.1/"
-        - "/home/luan/.espressif/tools/openocd-esp32/v0.12.0-esp32-20260304/openocd-esp32/bin"
-        - "/home/luan/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin"
-        - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/bin"
-        - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/riscv32-esp-elf/bin"
-        - "/home/luan/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin"
-        - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin"
-        - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/bin"
-        - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin"
         - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump"
         - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table"
         - "/home/luan/.espressif/v5.4.4/esp-idf/tools"
@@ -2426,7 +2116,9 @@ events:
       - "xtensa-esp32-elf-gcc-ar"
     candidate_directories:
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/"
-      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/"
       - "/home/luan/.espressif/tools/esp-clang/esp-18.1.2_20240912/esp-clang/bin/"
       - "/home/luan/.espressif/tools/esp-rom-elfs/20241011/"
       - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/"
@@ -2438,9 +2130,7 @@ events:
       - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/riscv32-esp-elf/bin/"
       - "/home/luan/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/"
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/bin/"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/"
+      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/"
       - "/home/luan/.local/bin/"
       - "/home/luan/bin/"
       - "/usr/lib64/ccache/"
@@ -2449,7 +2139,9 @@ events:
       - "/bin/"
     searched_directories:
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc-ar-"
-      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/xtensa-esp32-elf-gcc-ar-"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/xtensa-esp32-elf-gcc-ar-"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/xtensa-esp32-elf-gcc-ar-"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/xtensa-esp32-elf-gcc-ar-"
       - "/home/luan/.espressif/tools/esp-clang/esp-18.1.2_20240912/esp-clang/bin/xtensa-esp32-elf-gcc-ar-"
       - "/home/luan/.espressif/tools/esp-rom-elfs/20241011/xtensa-esp32-elf-gcc-ar-"
       - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/xtensa-esp32-elf-gcc-ar-"
@@ -2461,9 +2153,7 @@ events:
       - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/riscv32-esp-elf/bin/xtensa-esp32-elf-gcc-ar-"
       - "/home/luan/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/xtensa-esp32-elf-gcc-ar-"
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc-ar-"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/xtensa-esp32-elf-gcc-ar-"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/xtensa-esp32-elf-gcc-ar-"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/xtensa-esp32-elf-gcc-ar-"
+      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/xtensa-esp32-elf-gcc-ar-"
       - "/home/luan/.local/bin/xtensa-esp32-elf-gcc-ar-"
       - "/home/luan/bin/xtensa-esp32-elf-gcc-ar-"
       - "/usr/lib64/ccache/xtensa-esp32-elf-gcc-ar-"
@@ -2471,7 +2161,9 @@ events:
       - "/usr/bin/xtensa-esp32-elf-gcc-ar-"
       - "/bin/xtensa-esp32-elf-gcc-ar-"
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc-ar-"
-      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/xtensa-esp32-elf-gcc-ar-"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/xtensa-esp32-elf-gcc-ar-"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/xtensa-esp32-elf-gcc-ar-"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/xtensa-esp32-elf-gcc-ar-"
       - "/home/luan/.espressif/tools/esp-clang/esp-18.1.2_20240912/esp-clang/bin/xtensa-esp32-elf-gcc-ar-"
       - "/home/luan/.espressif/tools/esp-rom-elfs/20241011/xtensa-esp32-elf-gcc-ar-"
       - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/xtensa-esp32-elf-gcc-ar-"
@@ -2483,9 +2175,7 @@ events:
       - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/riscv32-esp-elf/bin/xtensa-esp32-elf-gcc-ar-"
       - "/home/luan/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/xtensa-esp32-elf-gcc-ar-"
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc-ar-"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/xtensa-esp32-elf-gcc-ar-"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/xtensa-esp32-elf-gcc-ar-"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/xtensa-esp32-elf-gcc-ar-"
+      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/xtensa-esp32-elf-gcc-ar-"
       - "/home/luan/.local/bin/xtensa-esp32-elf-gcc-ar-"
       - "/home/luan/bin/xtensa-esp32-elf-gcc-ar-"
       - "/usr/lib64/ccache/xtensa-esp32-elf-gcc-ar-"
@@ -2495,20 +2185,6 @@ events:
     found: "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc-ar"
     search_context:
       ENV{PATH}:
-        - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin"
-        - "/home/luan/.espressif/tools/esp-clang/esp-18.1.2_20240912/esp-clang/bin"
-        - "/home/luan/.espressif/tools/esp-rom-elfs/20241011/"
-        - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin"
-        - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/esp32ulp-elf/bin"
-        - "/home/luan/.espressif/tools/ninja/1.12.1/"
-        - "/home/luan/.espressif/tools/openocd-esp32/v0.12.0-esp32-20260304/openocd-esp32/bin"
-        - "/home/luan/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin"
-        - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/bin"
-        - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/riscv32-esp-elf/bin"
-        - "/home/luan/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin"
-        - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin"
-        - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/bin"
-        - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin"
         - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump"
         - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table"
         - "/home/luan/.espressif/v5.4.4/esp-idf/tools"
@@ -2556,7 +2232,9 @@ events:
       - "xtensa-esp32-elf-gcc-ranlib"
     candidate_directories:
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/"
-      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/"
       - "/home/luan/.espressif/tools/esp-clang/esp-18.1.2_20240912/esp-clang/bin/"
       - "/home/luan/.espressif/tools/esp-rom-elfs/20241011/"
       - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/"
@@ -2568,9 +2246,7 @@ events:
       - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/riscv32-esp-elf/bin/"
       - "/home/luan/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/"
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/bin/"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/"
+      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/"
       - "/home/luan/.local/bin/"
       - "/home/luan/bin/"
       - "/usr/lib64/ccache/"
@@ -2579,7 +2255,9 @@ events:
       - "/bin/"
     searched_directories:
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc-ranlib-"
-      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/xtensa-esp32-elf-gcc-ranlib-"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/xtensa-esp32-elf-gcc-ranlib-"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/xtensa-esp32-elf-gcc-ranlib-"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/xtensa-esp32-elf-gcc-ranlib-"
       - "/home/luan/.espressif/tools/esp-clang/esp-18.1.2_20240912/esp-clang/bin/xtensa-esp32-elf-gcc-ranlib-"
       - "/home/luan/.espressif/tools/esp-rom-elfs/20241011/xtensa-esp32-elf-gcc-ranlib-"
       - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/xtensa-esp32-elf-gcc-ranlib-"
@@ -2591,9 +2269,7 @@ events:
       - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/riscv32-esp-elf/bin/xtensa-esp32-elf-gcc-ranlib-"
       - "/home/luan/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/xtensa-esp32-elf-gcc-ranlib-"
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc-ranlib-"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/xtensa-esp32-elf-gcc-ranlib-"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/xtensa-esp32-elf-gcc-ranlib-"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/xtensa-esp32-elf-gcc-ranlib-"
+      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/xtensa-esp32-elf-gcc-ranlib-"
       - "/home/luan/.local/bin/xtensa-esp32-elf-gcc-ranlib-"
       - "/home/luan/bin/xtensa-esp32-elf-gcc-ranlib-"
       - "/usr/lib64/ccache/xtensa-esp32-elf-gcc-ranlib-"
@@ -2601,7 +2277,9 @@ events:
       - "/usr/bin/xtensa-esp32-elf-gcc-ranlib-"
       - "/bin/xtensa-esp32-elf-gcc-ranlib-"
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc-ranlib-"
-      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/xtensa-esp32-elf-gcc-ranlib-"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/xtensa-esp32-elf-gcc-ranlib-"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/xtensa-esp32-elf-gcc-ranlib-"
+      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/xtensa-esp32-elf-gcc-ranlib-"
       - "/home/luan/.espressif/tools/esp-clang/esp-18.1.2_20240912/esp-clang/bin/xtensa-esp32-elf-gcc-ranlib-"
       - "/home/luan/.espressif/tools/esp-rom-elfs/20241011/xtensa-esp32-elf-gcc-ranlib-"
       - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin/xtensa-esp32-elf-gcc-ranlib-"
@@ -2613,9 +2291,7 @@ events:
       - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/riscv32-esp-elf/bin/xtensa-esp32-elf-gcc-ranlib-"
       - "/home/luan/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin/xtensa-esp32-elf-gcc-ranlib-"
       - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc-ranlib-"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump/xtensa-esp32-elf-gcc-ranlib-"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table/xtensa-esp32-elf-gcc-ranlib-"
-      - "/home/luan/.espressif/v5.4.4/esp-idf/tools/xtensa-esp32-elf-gcc-ranlib-"
+      - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin/xtensa-esp32-elf-gcc-ranlib-"
       - "/home/luan/.local/bin/xtensa-esp32-elf-gcc-ranlib-"
       - "/home/luan/bin/xtensa-esp32-elf-gcc-ranlib-"
       - "/usr/lib64/ccache/xtensa-esp32-elf-gcc-ranlib-"
@@ -2625,20 +2301,6 @@ events:
     found: "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc-ranlib"
     search_context:
       ENV{PATH}:
-        - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin"
-        - "/home/luan/.espressif/tools/esp-clang/esp-18.1.2_20240912/esp-clang/bin"
-        - "/home/luan/.espressif/tools/esp-rom-elfs/20241011/"
-        - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin"
-        - "/home/luan/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/esp32ulp-elf/bin"
-        - "/home/luan/.espressif/tools/ninja/1.12.1/"
-        - "/home/luan/.espressif/tools/openocd-esp32/v0.12.0-esp32-20260304/openocd-esp32/bin"
-        - "/home/luan/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin"
-        - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/bin"
-        - "/home/luan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20260121/riscv32-esp-elf/riscv32-esp-elf/bin"
-        - "/home/luan/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin"
-        - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin"
-        - "/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/bin"
-        - "/home/luan/.espressif/tools/python/v5.4.4/venv/bin"
         - "/home/luan/.espressif/v5.4.4/esp-idf/components/espcoredump"
         - "/home/luan/.espressif/v5.4.4/esp-idf/components/partition_table"
         - "/home/luan/.espressif/v5.4.4/esp-idf/tools"
@@ -2671,8 +2333,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/home/luan/Documents/Espressif/Esp32_Project/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-NNHA34"
-      binary: "/home/luan/Documents/Espressif/Esp32_Project/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-NNHA34"
+      source: "/home/luan/Documents/Custom Office Templates/gh/master_lcd/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-TbgKAK"
+      binary: "/home/luan/Documents/Custom Office Templates/gh/master_lcd/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-TbgKAK"
     cmakeVariables:
       CMAKE_CXX_STDLIB_MODULES_JSON: ""
       CMAKE_C_FLAGS: "-mlongcalls -Wno-frame-address  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy"
@@ -2683,10 +2345,10 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/luan/Documents/Espressif/Esp32_Project/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-NNHA34'
+        Change Dir: '/home/luan/Documents/Custom Office Templates/gh/master_lcd/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-TbgKAK'
         
-        Run Build Command(s): /home/luan/.espressif/tools/ninja/1.12.1/ninja -v cmTC_d787f
-        [1/2] /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc   -mlongcalls -Wno-frame-address  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy    -v -o CMakeFiles/cmTC_d787f.dir/CMakeCCompilerABI.c.obj -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+        Run Build Command(s): /home/luan/.espressif/tools/ninja/1.12.1/ninja -v cmTC_410a3
+        [1/2] /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc   -mlongcalls -Wno-frame-address  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy    -v -o CMakeFiles/cmTC_410a3.dir/CMakeCCompilerABI.c.obj -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
         Using built-in specs.
         COLLECT_GCC=/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/xtensa-esp-elf-gcc
         Target: xtensa-esp-elf
@@ -2694,8 +2356,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 14.2.0 (crosstool-NG esp-14.2.0_20260121) 
-        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32.so' '-mlongcalls' '-Wno-frame-address' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'CMakeFiles/cmTC_d787f.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_d787f.dir/'
-         /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/cc1 -quiet -v -imultilib esp32 -iprefix /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/ -isysroot /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../xtensa-esp-elf /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_d787f.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mdynconfig=xtensa_esp32.so -mlongcalls -Wno-frame-address -version -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -o /tmp/cczBPoHi.s
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32.so' '-mlongcalls' '-Wno-frame-address' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'CMakeFiles/cmTC_410a3.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_410a3.dir/'
+         /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/cc1 -quiet -v -imultilib esp32 -iprefix /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/ -isysroot /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../xtensa-esp-elf /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_410a3.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mdynconfig=xtensa_esp32.so -mlongcalls -Wno-frame-address -version -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -o /tmp/ccEqVcqP.s
         GNU C17 (crosstool-NG esp-14.2.0_20260121) version 14.2.0 (xtensa-esp-elf)
         	compiled by GNU C version 6.3.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
         
@@ -2712,12 +2374,12 @@ events:
          /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/include
         End of search list.
         Compiler executable checksum: 709abf7e99d4c633116df3b91860509f
-        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32.so' '-mlongcalls' '-Wno-frame-address' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'CMakeFiles/cmTC_d787f.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_d787f.dir/'
-         /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/as --traditional-format --longcalls --dynconfig=xtensa_esp32.so -o CMakeFiles/cmTC_d787f.dir/CMakeCCompilerABI.c.obj /tmp/cczBPoHi.s
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32.so' '-mlongcalls' '-Wno-frame-address' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'CMakeFiles/cmTC_410a3.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_410a3.dir/'
+         /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/as --traditional-format --longcalls --dynconfig=xtensa_esp32.so -o CMakeFiles/cmTC_410a3.dir/CMakeCCompilerABI.c.obj /tmp/ccEqVcqP.s
         COMPILER_PATH=/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/:/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../libexec/gcc/:/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/
         LIBRARY_PATH=/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32/:/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32/:/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32/:/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/:/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/:/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/:/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/:/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib/
-        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32.so' '-mlongcalls' '-Wno-frame-address' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'CMakeFiles/cmTC_d787f.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_d787f.dir/CMakeCCompilerABI.c.'
-        [2/2] : && /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc -mlongcalls -Wno-frame-address  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -v CMakeFiles/cmTC_d787f.dir/CMakeCCompilerABI.c.obj -o cmTC_d787f   && :
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32.so' '-mlongcalls' '-Wno-frame-address' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'CMakeFiles/cmTC_410a3.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_410a3.dir/CMakeCCompilerABI.c.'
+        [2/2] : && /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc -mlongcalls -Wno-frame-address  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -v CMakeFiles/cmTC_410a3.dir/CMakeCCompilerABI.c.obj -o cmTC_410a3   && :
         Using built-in specs.
         COLLECT_GCC=/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/xtensa-esp-elf-gcc
         COLLECT_LTO_WRAPPER=/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/lto-wrapper
@@ -2728,9 +2390,9 @@ events:
         gcc version 14.2.0 (crosstool-NG esp-14.2.0_20260121) 
         COMPILER_PATH=/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/:/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../libexec/gcc/:/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/
         LIBRARY_PATH=/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32/:/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32/:/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32/:/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/:/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/:/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/:/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/:/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib/
-        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32.so' '-mlongcalls' '-Wno-frame-address' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'cmTC_d787f' '-dumpdir' 'cmTC_d787f.'
-         /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/collect2 -plugin /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/liblto_plugin.so -plugin-opt=/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccdVsPd3.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc --sysroot=/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../xtensa-esp-elf --dynconfig=xtensa_esp32.so -o cmTC_d787f /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32/crt0.o /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32/crti.o /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32/crtbegin.o -L/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32 -L/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32 -L/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32 -L/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0 -L/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc -L/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib -L/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../xtensa-esp-elf/lib -L/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib CMakeFiles/cmTC_d787f.dir/CMakeCCompilerABI.c.obj -lgcc -lc -lnosys -lc -lgcc /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32/crtend.o /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32/crtn.o
-        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32.so' '-mlongcalls' '-Wno-frame-address' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'cmTC_d787f' '-dumpdir' 'cmTC_d787f.'
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32.so' '-mlongcalls' '-Wno-frame-address' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'cmTC_410a3' '-dumpdir' 'cmTC_410a3.'
+         /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/collect2 -plugin /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/liblto_plugin.so -plugin-opt=/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccbbcNhT.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc --sysroot=/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../xtensa-esp-elf --dynconfig=xtensa_esp32.so -o cmTC_410a3 /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32/crt0.o /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32/crti.o /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32/crtbegin.o -L/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32 -L/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32 -L/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32 -L/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0 -L/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc -L/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib -L/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../xtensa-esp-elf/lib -L/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib CMakeFiles/cmTC_410a3.dir/CMakeCCompilerABI.c.obj -lgcc -lc -lnosys -lc -lgcc /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32/crtend.o /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32/crtn.o
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32.so' '-mlongcalls' '-Wno-frame-address' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'cmTC_410a3' '-dumpdir' 'cmTC_410a3.'
         
       exitCode: 0
   -
@@ -2765,10 +2427,10 @@ events:
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/home/luan/Documents/Espressif/Esp32_Project/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-NNHA34']
+        ignore line: [Change Dir: '/home/luan/Documents/Custom Office Templates/gh/master_lcd/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-TbgKAK']
         ignore line: []
-        ignore line: [Run Build Command(s): /home/luan/.espressif/tools/ninja/1.12.1/ninja -v cmTC_d787f]
-        ignore line: [[1/2] /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc   -mlongcalls -Wno-frame-address  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy    -v -o CMakeFiles/cmTC_d787f.dir/CMakeCCompilerABI.c.obj -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): /home/luan/.espressif/tools/ninja/1.12.1/ninja -v cmTC_410a3]
+        ignore line: [[1/2] /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc   -mlongcalls -Wno-frame-address  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy    -v -o CMakeFiles/cmTC_410a3.dir/CMakeCCompilerABI.c.obj -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/xtensa-esp-elf-gcc]
         ignore line: [Target: xtensa-esp-elf]
@@ -2776,8 +2438,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 14.2.0 (crosstool-NG esp-14.2.0_20260121) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32.so' '-mlongcalls' '-Wno-frame-address' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'CMakeFiles/cmTC_d787f.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_d787f.dir/']
-        ignore line: [ /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/cc1 -quiet -v -imultilib esp32 -iprefix /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/ -isysroot /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../xtensa-esp-elf /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_d787f.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mdynconfig=xtensa_esp32.so -mlongcalls -Wno-frame-address -version -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -o /tmp/cczBPoHi.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32.so' '-mlongcalls' '-Wno-frame-address' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'CMakeFiles/cmTC_410a3.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_410a3.dir/']
+        ignore line: [ /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/cc1 -quiet -v -imultilib esp32 -iprefix /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/ -isysroot /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../xtensa-esp-elf /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_410a3.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mdynconfig=xtensa_esp32.so -mlongcalls -Wno-frame-address -version -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -o /tmp/ccEqVcqP.s]
         ignore line: [GNU C17 (crosstool-NG esp-14.2.0_20260121) version 14.2.0 (xtensa-esp-elf)]
         ignore line: [	compiled by GNU C version 6.3.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
         ignore line: []
@@ -2794,12 +2456,12 @@ events:
         ignore line: [ /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: 709abf7e99d4c633116df3b91860509f]
-        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32.so' '-mlongcalls' '-Wno-frame-address' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'CMakeFiles/cmTC_d787f.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_d787f.dir/']
-        ignore line: [ /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/as --traditional-format --longcalls --dynconfig=xtensa_esp32.so -o CMakeFiles/cmTC_d787f.dir/CMakeCCompilerABI.c.obj /tmp/cczBPoHi.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32.so' '-mlongcalls' '-Wno-frame-address' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'CMakeFiles/cmTC_410a3.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_410a3.dir/']
+        ignore line: [ /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/as --traditional-format --longcalls --dynconfig=xtensa_esp32.so -o CMakeFiles/cmTC_410a3.dir/CMakeCCompilerABI.c.obj /tmp/ccEqVcqP.s]
         ignore line: [COMPILER_PATH=/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/:/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../libexec/gcc/:/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/]
         ignore line: [LIBRARY_PATH=/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32/:/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32/:/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32/:/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/:/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/:/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/:/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/:/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32.so' '-mlongcalls' '-Wno-frame-address' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'CMakeFiles/cmTC_d787f.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_d787f.dir/CMakeCCompilerABI.c.']
-        ignore line: [[2/2] : && /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc -mlongcalls -Wno-frame-address  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -v CMakeFiles/cmTC_d787f.dir/CMakeCCompilerABI.c.obj -o cmTC_d787f   && :]
+        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32.so' '-mlongcalls' '-Wno-frame-address' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'CMakeFiles/cmTC_410a3.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_410a3.dir/CMakeCCompilerABI.c.']
+        ignore line: [[2/2] : && /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc -mlongcalls -Wno-frame-address  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -v CMakeFiles/cmTC_410a3.dir/CMakeCCompilerABI.c.obj -o cmTC_410a3   && :]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/xtensa-esp-elf-gcc]
         ignore line: [COLLECT_LTO_WRAPPER=/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/lto-wrapper]
@@ -2810,13 +2472,13 @@ events:
         ignore line: [gcc version 14.2.0 (crosstool-NG esp-14.2.0_20260121) ]
         ignore line: [COMPILER_PATH=/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/:/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../libexec/gcc/:/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/]
         ignore line: [LIBRARY_PATH=/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32/:/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32/:/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32/:/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/:/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/:/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/:/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/:/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32.so' '-mlongcalls' '-Wno-frame-address' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'cmTC_d787f' '-dumpdir' 'cmTC_d787f.']
-        link line: [ /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/collect2 -plugin /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/liblto_plugin.so -plugin-opt=/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccdVsPd3.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc --sysroot=/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../xtensa-esp-elf --dynconfig=xtensa_esp32.so -o cmTC_d787f /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32/crt0.o /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32/crti.o /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32/crtbegin.o -L/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32 -L/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32 -L/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32 -L/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0 -L/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc -L/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib -L/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../xtensa-esp-elf/lib -L/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib CMakeFiles/cmTC_d787f.dir/CMakeCCompilerABI.c.obj -lgcc -lc -lnosys -lc -lgcc /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32/crtend.o /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32.so' '-mlongcalls' '-Wno-frame-address' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'cmTC_410a3' '-dumpdir' 'cmTC_410a3.']
+        link line: [ /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/collect2 -plugin /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/liblto_plugin.so -plugin-opt=/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccbbcNhT.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc --sysroot=/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../xtensa-esp-elf --dynconfig=xtensa_esp32.so -o cmTC_410a3 /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32/crt0.o /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32/crti.o /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32/crtbegin.o -L/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32 -L/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32 -L/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32 -L/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0 -L/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc -L/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib -L/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../xtensa-esp-elf/lib -L/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib CMakeFiles/cmTC_410a3.dir/CMakeCCompilerABI.c.obj -lgcc -lc -lnosys -lc -lgcc /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32/crtend.o /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32/crtn.o]
           arg [/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccdVsPd3.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccbbcNhT.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
           arg [-plugin-opt=-pass-through=-lnosys] ==> ignore
@@ -2825,7 +2487,7 @@ events:
           arg [--sysroot=/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../xtensa-esp-elf] ==> ignore
           arg [--dynconfig=xtensa_esp32.so] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_d787f] ==> ignore
+          arg [cmTC_410a3] ==> ignore
           arg [/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32/crt0.o] ==> obj [/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32/crt0.o]
           arg [/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32/crti.o] ==> obj [/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32/crti.o]
           arg [/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32/crtbegin.o] ==> obj [/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32/crtbegin.o]
@@ -2837,7 +2499,7 @@ events:
           arg [-L/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib] ==> dir [/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib]
           arg [-L/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../xtensa-esp-elf/lib] ==> dir [/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../xtensa-esp-elf/lib]
           arg [-L/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib] ==> dir [/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib]
-          arg [CMakeFiles/cmTC_d787f.dir/CMakeCCompilerABI.c.obj] ==> ignore
+          arg [CMakeFiles/cmTC_410a3.dir/CMakeCCompilerABI.c.obj] ==> ignore
           arg [-lgcc] ==> lib [gcc]
           arg [-lc] ==> lib [c]
           arg [-lnosys] ==> lib [nosys]
@@ -2845,7 +2507,7 @@ events:
           arg [-lgcc] ==> lib [gcc]
           arg [/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32/crtend.o] ==> obj [/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32/crtend.o]
           arg [/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32/crtn.o] ==> obj [/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32/crtn.o]
-        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32.so' '-mlongcalls' '-Wno-frame-address' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'cmTC_d787f' '-dumpdir' 'cmTC_d787f.']
+        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32.so' '-mlongcalls' '-Wno-frame-address' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'cmTC_410a3' '-dumpdir' 'cmTC_410a3.']
         ignore line: []
         ignore line: []
         collapse obj [/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32/crt0.o] ==> [/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/lib/esp32/crt0.o]
@@ -2877,8 +2539,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/home/luan/Documents/Espressif/Esp32_Project/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-ycPNgt"
-      binary: "/home/luan/Documents/Espressif/Esp32_Project/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-ycPNgt"
+      source: "/home/luan/Documents/Custom Office Templates/gh/master_lcd/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-mg9dSe"
+      binary: "/home/luan/Documents/Custom Office Templates/gh/master_lcd/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-mg9dSe"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "-mlongcalls -Wno-frame-address  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -2890,10 +2552,10 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/luan/Documents/Espressif/Esp32_Project/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-ycPNgt'
+        Change Dir: '/home/luan/Documents/Custom Office Templates/gh/master_lcd/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-mg9dSe'
         
-        Run Build Command(s): /home/luan/.espressif/tools/ninja/1.12.1/ninja -v cmTC_bf7ea
-        [1/2] /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/xtensa-esp32-elf-g++   -mlongcalls -Wno-frame-address  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy    -v -o CMakeFiles/cmTC_bf7ea.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /home/luan/.espressif/tools/ninja/1.12.1/ninja -v cmTC_ad7e3
+        [1/2] /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/xtensa-esp32-elf-g++   -mlongcalls -Wno-frame-address  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy    -v -o CMakeFiles/cmTC_ad7e3.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
         Using built-in specs.
         COLLECT_GCC=/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/xtensa-esp-elf-g++
         Target: xtensa-esp-elf
@@ -2901,8 +2563,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 14.2.0 (crosstool-NG esp-14.2.0_20260121) 
-        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32.so' '-mlongcalls' '-Wno-frame-address' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'CMakeFiles/cmTC_bf7ea.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_bf7ea.dir/'
-         /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/cc1plus -quiet -v -imultilib esp32 -iprefix /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/ -isysroot /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../xtensa-esp-elf /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_bf7ea.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mdynconfig=xtensa_esp32.so -mlongcalls -Wno-frame-address -version -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -o /tmp/ccpawukT.s
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32.so' '-mlongcalls' '-Wno-frame-address' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'CMakeFiles/cmTC_ad7e3.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_ad7e3.dir/'
+         /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/cc1plus -quiet -v -imultilib esp32 -iprefix /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/ -isysroot /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../xtensa-esp-elf /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_ad7e3.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mdynconfig=xtensa_esp32.so -mlongcalls -Wno-frame-address -version -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -o /tmp/ccHKJWXa.s
         GNU C++17 (crosstool-NG esp-14.2.0_20260121) version 14.2.0 (xtensa-esp-elf)
         	compiled by GNU C version 6.3.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
         
@@ -2925,12 +2587,12 @@ events:
          /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/include
         End of search list.
         Compiler executable checksum: a254981dd59757a59628c9ca49d36a87
-        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32.so' '-mlongcalls' '-Wno-frame-address' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'CMakeFiles/cmTC_bf7ea.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_bf7ea.dir/'
-         /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/as --traditional-format --longcalls --dynconfig=xtensa_esp32.so -o CMakeFiles/cmTC_bf7ea.dir/CMakeCXXCompilerABI.cpp.obj /tmp/ccpawukT.s
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32.so' '-mlongcalls' '-Wno-frame-address' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'CMakeFiles/cmTC_ad7e3.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_ad7e3.dir/'
+         /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/as --traditional-format --longcalls --dynconfig=xtensa_esp32.so -o CMakeFiles/cmTC_ad7e3.dir/CMakeCXXCompilerABI.cpp.obj /tmp/ccHKJWXa.s
         COMPILER_PATH=/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/:/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../libexec/gcc/:/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/
         LIBRARY_PATH=/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32/:/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32/:/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32/:/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/:/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/:/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/:/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/:/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib/
-        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32.so' '-mlongcalls' '-Wno-frame-address' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'CMakeFiles/cmTC_bf7ea.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_bf7ea.dir/CMakeCXXCompilerABI.cpp.'
-        [2/2] : && /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/xtensa-esp32-elf-g++ -mlongcalls -Wno-frame-address  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -v CMakeFiles/cmTC_bf7ea.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_bf7ea   && :
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32.so' '-mlongcalls' '-Wno-frame-address' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'CMakeFiles/cmTC_ad7e3.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_ad7e3.dir/CMakeCXXCompilerABI.cpp.'
+        [2/2] : && /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/xtensa-esp32-elf-g++ -mlongcalls -Wno-frame-address  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -v CMakeFiles/cmTC_ad7e3.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_ad7e3   && :
         Using built-in specs.
         COLLECT_GCC=/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/xtensa-esp-elf-g++
         COLLECT_LTO_WRAPPER=/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/lto-wrapper
@@ -2941,9 +2603,9 @@ events:
         gcc version 14.2.0 (crosstool-NG esp-14.2.0_20260121) 
         COMPILER_PATH=/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/:/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../libexec/gcc/:/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/
         LIBRARY_PATH=/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32/:/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32/:/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32/:/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/:/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/:/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/:/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/:/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib/
-        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32.so' '-mlongcalls' '-Wno-frame-address' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'cmTC_bf7ea' '-dumpdir' 'cmTC_bf7ea.'
-         /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/collect2 -plugin /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/liblto_plugin.so -plugin-opt=/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccVVGedA.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc --sysroot=/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../xtensa-esp-elf --dynconfig=xtensa_esp32.so -o cmTC_bf7ea /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32/crt0.o /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32/crti.o /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32/crtbegin.o -L/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32 -L/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32 -L/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32 -L/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0 -L/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc -L/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib -L/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../xtensa-esp-elf/lib -L/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib CMakeFiles/cmTC_bf7ea.dir/CMakeCXXCompilerABI.cpp.obj -lstdc++ -lm -lgcc -lc -lnosys -lc -lgcc /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32/crtend.o /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32/crtn.o
-        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32.so' '-mlongcalls' '-Wno-frame-address' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'cmTC_bf7ea' '-dumpdir' 'cmTC_bf7ea.'
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32.so' '-mlongcalls' '-Wno-frame-address' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'cmTC_ad7e3' '-dumpdir' 'cmTC_ad7e3.'
+         /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/collect2 -plugin /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/liblto_plugin.so -plugin-opt=/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccmHD0w8.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc --sysroot=/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../xtensa-esp-elf --dynconfig=xtensa_esp32.so -o cmTC_ad7e3 /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32/crt0.o /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32/crti.o /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32/crtbegin.o -L/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32 -L/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32 -L/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32 -L/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0 -L/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc -L/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib -L/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../xtensa-esp-elf/lib -L/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib CMakeFiles/cmTC_ad7e3.dir/CMakeCXXCompilerABI.cpp.obj -lstdc++ -lm -lgcc -lc -lnosys -lc -lgcc /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32/crtend.o /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32/crtn.o
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32.so' '-mlongcalls' '-Wno-frame-address' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'cmTC_ad7e3' '-dumpdir' 'cmTC_ad7e3.'
         
       exitCode: 0
   -
@@ -2984,10 +2646,10 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/home/luan/Documents/Espressif/Esp32_Project/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-ycPNgt']
+        ignore line: [Change Dir: '/home/luan/Documents/Custom Office Templates/gh/master_lcd/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-mg9dSe']
         ignore line: []
-        ignore line: [Run Build Command(s): /home/luan/.espressif/tools/ninja/1.12.1/ninja -v cmTC_bf7ea]
-        ignore line: [[1/2] /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/xtensa-esp32-elf-g++   -mlongcalls -Wno-frame-address  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy    -v -o CMakeFiles/cmTC_bf7ea.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): /home/luan/.espressif/tools/ninja/1.12.1/ninja -v cmTC_ad7e3]
+        ignore line: [[1/2] /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/xtensa-esp32-elf-g++   -mlongcalls -Wno-frame-address  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy    -v -o CMakeFiles/cmTC_ad7e3.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/xtensa-esp-elf-g++]
         ignore line: [Target: xtensa-esp-elf]
@@ -2995,8 +2657,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 14.2.0 (crosstool-NG esp-14.2.0_20260121) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32.so' '-mlongcalls' '-Wno-frame-address' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'CMakeFiles/cmTC_bf7ea.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_bf7ea.dir/']
-        ignore line: [ /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/cc1plus -quiet -v -imultilib esp32 -iprefix /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/ -isysroot /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../xtensa-esp-elf /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_bf7ea.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mdynconfig=xtensa_esp32.so -mlongcalls -Wno-frame-address -version -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -o /tmp/ccpawukT.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32.so' '-mlongcalls' '-Wno-frame-address' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'CMakeFiles/cmTC_ad7e3.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_ad7e3.dir/']
+        ignore line: [ /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/cc1plus -quiet -v -imultilib esp32 -iprefix /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/ -isysroot /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../xtensa-esp-elf /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_ad7e3.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mdynconfig=xtensa_esp32.so -mlongcalls -Wno-frame-address -version -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -o /tmp/ccHKJWXa.s]
         ignore line: [GNU C++17 (crosstool-NG esp-14.2.0_20260121) version 14.2.0 (xtensa-esp-elf)]
         ignore line: [	compiled by GNU C version 6.3.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
         ignore line: []
@@ -3019,12 +2681,12 @@ events:
         ignore line: [ /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: a254981dd59757a59628c9ca49d36a87]
-        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32.so' '-mlongcalls' '-Wno-frame-address' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'CMakeFiles/cmTC_bf7ea.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_bf7ea.dir/']
-        ignore line: [ /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/as --traditional-format --longcalls --dynconfig=xtensa_esp32.so -o CMakeFiles/cmTC_bf7ea.dir/CMakeCXXCompilerABI.cpp.obj /tmp/ccpawukT.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32.so' '-mlongcalls' '-Wno-frame-address' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'CMakeFiles/cmTC_ad7e3.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_ad7e3.dir/']
+        ignore line: [ /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/as --traditional-format --longcalls --dynconfig=xtensa_esp32.so -o CMakeFiles/cmTC_ad7e3.dir/CMakeCXXCompilerABI.cpp.obj /tmp/ccHKJWXa.s]
         ignore line: [COMPILER_PATH=/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/:/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../libexec/gcc/:/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/]
         ignore line: [LIBRARY_PATH=/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32/:/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32/:/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32/:/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/:/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/:/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/:/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/:/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32.so' '-mlongcalls' '-Wno-frame-address' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'CMakeFiles/cmTC_bf7ea.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_bf7ea.dir/CMakeCXXCompilerABI.cpp.']
-        ignore line: [[2/2] : && /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/xtensa-esp32-elf-g++ -mlongcalls -Wno-frame-address  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -v CMakeFiles/cmTC_bf7ea.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_bf7ea   && :]
+        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32.so' '-mlongcalls' '-Wno-frame-address' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'CMakeFiles/cmTC_ad7e3.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_ad7e3.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [[2/2] : && /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/xtensa-esp32-elf-g++ -mlongcalls -Wno-frame-address  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -v CMakeFiles/cmTC_ad7e3.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_ad7e3   && :]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/xtensa-esp-elf-g++]
         ignore line: [COLLECT_LTO_WRAPPER=/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/lto-wrapper]
@@ -3035,13 +2697,13 @@ events:
         ignore line: [gcc version 14.2.0 (crosstool-NG esp-14.2.0_20260121) ]
         ignore line: [COMPILER_PATH=/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/:/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../libexec/gcc/:/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/]
         ignore line: [LIBRARY_PATH=/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32/:/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32/:/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32/:/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/:/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/:/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/:/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/:/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32.so' '-mlongcalls' '-Wno-frame-address' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'cmTC_bf7ea' '-dumpdir' 'cmTC_bf7ea.']
-        link line: [ /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/collect2 -plugin /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/liblto_plugin.so -plugin-opt=/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccVVGedA.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc --sysroot=/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../xtensa-esp-elf --dynconfig=xtensa_esp32.so -o cmTC_bf7ea /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32/crt0.o /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32/crti.o /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32/crtbegin.o -L/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32 -L/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32 -L/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32 -L/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0 -L/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc -L/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib -L/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../xtensa-esp-elf/lib -L/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib CMakeFiles/cmTC_bf7ea.dir/CMakeCXXCompilerABI.cpp.obj -lstdc++ -lm -lgcc -lc -lnosys -lc -lgcc /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32/crtend.o /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32.so' '-mlongcalls' '-Wno-frame-address' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'cmTC_ad7e3' '-dumpdir' 'cmTC_ad7e3.']
+        link line: [ /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/collect2 -plugin /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/liblto_plugin.so -plugin-opt=/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccmHD0w8.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc --sysroot=/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../xtensa-esp-elf --dynconfig=xtensa_esp32.so -o cmTC_ad7e3 /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32/crt0.o /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32/crti.o /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32/crtbegin.o -L/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32 -L/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32 -L/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32 -L/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0 -L/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc -L/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib -L/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../xtensa-esp-elf/lib -L/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib CMakeFiles/cmTC_ad7e3.dir/CMakeCXXCompilerABI.cpp.obj -lstdc++ -lm -lgcc -lc -lnosys -lc -lgcc /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32/crtend.o /home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32/crtn.o]
           arg [/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/14.2.0/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccVVGedA.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccmHD0w8.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
           arg [-plugin-opt=-pass-through=-lnosys] ==> ignore
@@ -3050,7 +2712,7 @@ events:
           arg [--sysroot=/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../xtensa-esp-elf] ==> ignore
           arg [--dynconfig=xtensa_esp32.so] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_bf7ea] ==> ignore
+          arg [cmTC_ad7e3] ==> ignore
           arg [/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32/crt0.o] ==> obj [/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32/crt0.o]
           arg [/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32/crti.o] ==> obj [/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32/crti.o]
           arg [/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32/crtbegin.o] ==> obj [/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32/crtbegin.o]
@@ -3062,7 +2724,7 @@ events:
           arg [-L/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib] ==> dir [/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib]
           arg [-L/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../xtensa-esp-elf/lib] ==> dir [/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../xtensa-esp-elf/lib]
           arg [-L/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib] ==> dir [/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib]
-          arg [CMakeFiles/cmTC_bf7ea.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
+          arg [CMakeFiles/cmTC_ad7e3.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
           arg [-lstdc++] ==> lib [stdc++]
           arg [-lm] ==> lib [m]
           arg [-lgcc] ==> lib [gcc]
@@ -3072,7 +2734,7 @@ events:
           arg [-lgcc] ==> lib [gcc]
           arg [/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32/crtend.o] ==> obj [/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32/crtend.o]
           arg [/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32/crtn.o] ==> obj [/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/esp32/crtn.o]
-        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32.so' '-mlongcalls' '-Wno-frame-address' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'cmTC_bf7ea' '-dumpdir' 'cmTC_bf7ea.']
+        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32.so' '-mlongcalls' '-Wno-frame-address' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-fno-builtin-stpcpy' '-fno-builtin-strncpy' '-v' '-o' 'cmTC_ad7e3' '-dumpdir' 'cmTC_ad7e3.']
         ignore line: []
         ignore line: []
         collapse obj [/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/lib/esp32/crt0.o] ==> [/home/luan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/lib/esp32/crt0.o]

@@ -65,6 +65,7 @@ void ui_ScreenCn_screen_init(void)
     lv_obj_set_width(ui_PanelScan, 187);
     lv_obj_set_height(ui_PanelScan, 64);
     lv_obj_set_align(ui_PanelScan, LV_ALIGN_CENTER);
+    lv_obj_add_flag(ui_PanelScan, LV_OBJ_FLAG_HIDDEN);     /// Flags
     lv_obj_remove_flag(ui_PanelScan, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
     lv_obj_set_style_bg_color(ui_PanelScan, lv_color_hex(0xFFFFFF), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_bg_opa(ui_PanelScan, 20, LV_PART_MAIN | LV_STATE_DEFAULT);
@@ -111,7 +112,6 @@ void ui_ScreenCn_screen_init(void)
     lv_obj_set_x(ui_ContainerEnterWifi, 0);
     lv_obj_set_y(ui_ContainerEnterWifi, 13);
     lv_obj_set_align(ui_ContainerEnterWifi, LV_ALIGN_CENTER);
-    lv_obj_add_flag(ui_ContainerEnterWifi, LV_OBJ_FLAG_HIDDEN);     /// Flags
     lv_obj_remove_flag(ui_ContainerEnterWifi, LV_OBJ_FLAG_CLICKABLE | LV_OBJ_FLAG_SCROLLABLE);      /// Flags
     lv_obj_set_style_bg_color(ui_ContainerEnterWifi, lv_color_hex(0x000000), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_bg_opa(ui_ContainerEnterWifi, 100, LV_PART_MAIN | LV_STATE_DEFAULT);

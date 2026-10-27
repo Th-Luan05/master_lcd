@@ -4,7 +4,9 @@
 #include <math.h>
 #include <stdbool.h>
 #include <string.h>
-
+#include <stdint.h>
+#include "nvs_flash.h"
+#include "nvs.h"
 #include "driver/gpio.h"
 #include "driver/spi_master.h"
 #include "esp_check.h"
@@ -35,7 +37,8 @@
 #define LCD_H_RES          320
 #define LCD_V_RES          240
 #define LCD_PIXEL_CLOCK_HZ (10 * 1000 * 1000)
-#define LCD_DRAW_BUFFER_LINES 80
+/* ESP32 khong DMA tu PSRAM. Buffer ve nam SRAM + DMA, ~25 KB double buffer. */
+#define LCD_DRAW_BUFFER_LINES 40
 
 /* Dat x_max/y_max = 4095 de toa do touch tra ve gan nhu gia tri ADC tho (12 bit).
  * Phep hieu chinh se tu quy doi ra toa do man hinh. */
@@ -57,7 +60,74 @@ typedef struct {
 } touch_cal_t;
 
 static touch_cal_t s_cal;
+/* ------------------------------------------------------------------ */
+/* Luu / doc he so hieu chinh trong NVS                                */
+/* ------------------------------------------------------------------ */
 
+#define CAL_NVS_NS   "touchcal"
+#define CAL_NVS_KEY  "cal"
+/* Doi so nay neu doi huong man hinh (swap_xy/mirror) hoac do phan giai
+ * de bat buoc hieu chinh lai */
+#define CAL_MAGIC    0x54430001u
+
+typedef struct {
+    uint32_t    magic;
+    touch_cal_t cal;
+} cal_blob_t;
+
+static bool cal_is_sane(const touch_cal_t *c)
+{
+    const double v[6] = { c->a, c->b, c->c, c->d, c->e, c->f };
+    for (int i = 0; i < 6; i++) {
+        if (!isfinite(v[i])) return false;
+    }
+    /* Diem giua cua raw (~2048,2048) phai roi vao khoang gan man hinh */
+    double sx = c->a * 2048 + c->b * 2048 + c->c;
+    double sy = c->d * 2048 + c->e * 2048 + c->f;
+    return sx > -LCD_H_RES && sx < 2 * LCD_H_RES &&
+           sy > -LCD_V_RES && sy < 2 * LCD_V_RES;
+}
+
+static bool cal_load(touch_cal_t *out)
+{
+    nvs_handle_t h;
+    if (nvs_open(CAL_NVS_NS, NVS_READONLY, &h) != ESP_OK) return false;
+
+    cal_blob_t b;
+    size_t len = sizeof(b);
+    esp_err_t e = nvs_get_blob(h, CAL_NVS_KEY, &b, &len);
+    nvs_close(h);
+
+    if (e != ESP_OK || len != sizeof(b) || b.magic != CAL_MAGIC || !cal_is_sane(&b.cal)) {
+        return false;
+    }
+    *out = b.cal;
+    return true;
+}
+
+static void cal_save(const touch_cal_t *cal)
+{
+    nvs_handle_t h;
+    if (nvs_open(CAL_NVS_NS, NVS_READWRITE, &h) != ESP_OK) {
+        ESP_LOGE(TAG, "Khong mo duoc NVS de luu hieu chinh");
+        return;
+    }
+    cal_blob_t b = { .magic = CAL_MAGIC, .cal = *cal };
+    if (nvs_set_blob(h, CAL_NVS_KEY, &b, sizeof(b)) == ESP_OK && nvs_commit(h) == ESP_OK) {
+        ESP_LOGI(TAG, "Da luu he so hieu chinh vao NVS");
+    }
+    nvs_close(h);
+}
+
+void lcd_touch_cal_erase(void)
+{
+    nvs_handle_t h;
+    if (nvs_open(CAL_NVS_NS, NVS_READWRITE, &h) == ESP_OK) {
+        nvs_erase_all(h);
+        nvs_commit(h);
+        nvs_close(h);
+    }
+}
 /* ------------------------------------------------------------------ */
 /* Hardware                                                            */
 /* ------------------------------------------------------------------ */
@@ -153,8 +223,8 @@ static void lcd_lvgl_init(void)
             .mirror_y = false,
         },
         .flags = {
-            .buff_spiram = true,   // Bật dùng SPIRAM/PSRAM
-            .buff_dma = false,     // Phải tắt DMA vì SPIRAM không dùng chung với DMA được
+            .buff_spiram = false,
+            .buff_dma = true,
 #if LVGL_VERSION_MAJOR >= 9
             .swap_bytes = true,
 #endif
@@ -358,7 +428,21 @@ esp_err_t lcd_touch_calibrate(void)
 {
     ESP_RETURN_ON_FALSE(lvgl_display && touch_handle, ESP_ERR_INVALID_STATE, TAG,
                         "Call lcd_init() first");
+        /* Giu tay cham man hinh luc bat nguon -> ep hieu chinh lai */
+    bool force = false;
+    vTaskDelay(pdMS_TO_TICKS(100));
+    uint16_t tx, ty;
+    if (touch_read_raw(&tx, &ty)) {
+        ESP_LOGW(TAG, "Phat hien cham luc khoi dong -> hieu chinh lai");
+        force = true;
+    }
 
+    if (!force && cal_load(&s_cal)) {
+        ESP_LOGI(TAG, "Dung he so hieu chinh da luu: a=%.5f b=%.5f c=%.2f | d=%.5f e=%.5f f=%.2f",
+                 s_cal.a, s_cal.b, s_cal.c, s_cal.d, s_cal.e, s_cal.f);
+        touch_indev_register();
+        return ESP_OK;
+    }
     const double targets[4][2] = {
         { CAL_MARGIN,              CAL_MARGIN },              /* tren-trai  */
         { LCD_H_RES - CAL_MARGIN,  CAL_MARGIN },              /* tren-phai  */
@@ -422,6 +506,7 @@ esp_err_t lcd_touch_calibrate(void)
 
         if (ok && max_err <= CAL_MAX_ERR_PX) {
             s_cal = cal;
+            cal_save(&s_cal);
             ESP_LOGI(TAG, "Cal: a=%.5f b=%.5f c=%.2f | d=%.5f e=%.5f f=%.2f",
                      cal.a, cal.b, cal.c, cal.d, cal.e, cal.f);
             break;
@@ -450,7 +535,8 @@ esp_err_t lcd_touch_calibrate(void)
 
 esp_err_t lcd_init(void)
 {
-    const lvgl_port_cfg_t lvgl_config = ESP_LVGL_PORT_INIT_CONFIG();
+    lvgl_port_cfg_t lvgl_config = ESP_LVGL_PORT_INIT_CONFIG();
+    lvgl_config.task_affinity = 1; /* WiFi/MQTT o CPU0, LVGL/SPI o CPU1 */
     ESP_RETURN_ON_ERROR(lvgl_port_init(&lvgl_config), TAG, "LVGL init failed");
     ESP_RETURN_ON_ERROR(lcd_hardware_init(), TAG, "LCD hardware init failed");
     lcd_lvgl_init();

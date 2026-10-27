@@ -36,7 +36,7 @@ void ui_init(void)
     ui_ScreenStandby_screen_init();
     ui_ScreenHome_screen_init();
     ui____initial_actions0 = lv_obj_create(NULL);
-    lv_disp_load_scr(ui_ScreenSetting);
+    lv_disp_load_scr(ui_ScreenHome);
 }
 
 void ui_destroy(void)

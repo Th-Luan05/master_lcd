@@ -1,4 +1,4 @@
-# Install script for directory: /home/luan/Documents/Espressif/Esp32_Project/managed_components/atanisoft__esp_lcd_touch_xpt2046
+# Install script for directory: /home/luan/Documents/Custom Office Templates/gh/master_lcd/managed_components/atanisoft__esp_lcd_touch_xpt2046
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,6 +40,6 @@ endif()
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/luan/Documents/Espressif/Esp32_Project/build/esp-idf/atanisoft__esp_lcd_touch_xpt2046/install_local_manifest.txt"
+  file(WRITE "/home/luan/Documents/Custom Office Templates/gh/master_lcd/build/esp-idf/atanisoft__esp_lcd_touch_xpt2046/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

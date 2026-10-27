@@ -39,13 +39,13 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/luan/Documents/Espressif/Esp32_Project/build/bootloader/esp-idf/cmake_install.cmake")
+  include("/home/luan/Documents/Custom Office Templates/gh/master_lcd/build/bootloader/esp-idf/cmake_install.cmake")
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/luan/Documents/Espressif/Esp32_Project/build/bootloader/install_local_manifest.txt"
+  file(WRITE "/home/luan/Documents/Custom Office Templates/gh/master_lcd/build/bootloader/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
 if(CMAKE_INSTALL_COMPONENT)
@@ -61,6 +61,6 @@ else()
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/luan/Documents/Espressif/Esp32_Project/build/bootloader/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "/home/luan/Documents/Custom Office Templates/gh/master_lcd/build/bootloader/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

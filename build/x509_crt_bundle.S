@@ -1,4 +1,4 @@
-/* * Data converted from /home/luan/Documents/Espressif/Esp32_Project/build/esp-idf/mbedtls/x509_crt_bundle
+/* * Data converted from /home/luan/Documents/Custom Office Templates/gh/master_lcd/build/esp-idf/mbedtls/x509_crt_bundle
  */
 .data
 #if !defined (__APPLE__) && !defined (__linux__)

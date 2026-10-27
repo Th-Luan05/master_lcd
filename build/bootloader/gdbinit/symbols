@@ -22,4 +22,4 @@ set confirm off
 set confirm on
 
 # Load application symbols
-file /home/luan/Documents/Espressif/Esp32_Project/build/bootloader/bootloader.elf
+file /home/luan/Documents/Custom Office Templates/gh/master_lcd/build/bootloader/bootloader.elf
