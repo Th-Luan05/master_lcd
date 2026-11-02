@@ -515,7 +515,6 @@ esp_err_t lcd_touch_calibrate(void)
     return ESP_OK;
 }
 
-/* ------------------------------------------------------------------ */
 
 esp_err_t lcd_init(void)
 {
