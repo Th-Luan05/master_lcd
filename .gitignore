@@ -1,0 +1,30 @@
+# Thu muc build
+build/
+
+# Bo qua giao dien UI
+main/ui/
+
+# File cau hinh va file tam
+sdkconfig.old
+*.log
+*.tmp
+
+# File backup
+*~
+*.bak
+*.swp
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+
+# He thong
+.DS_Store
+Thumbs.db
+
